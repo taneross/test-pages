@@ -14,8 +14,7 @@
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 
       
-      <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-      <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
@@ -43,7 +42,7 @@
             <div class="ts-subnav">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="span12">
                         <ul class="nav mar-none">
                             <li class="secondary">Observer</li>
                             <li>Admin Overview</li>
@@ -55,30 +54,31 @@
                    </div>
                 </div>
             </div>
-            <div class="container second-content">
+            <div class="container">
                 <div class="row bread-wrap">
-                    <ol class="breadcrumb">
-                        <li><a href="#">Manage Calibration Templates</a></li>
+                    <div class="span12">
+                    <ul class="breadcrumb">
+                        <li><a href="#">Calibration Templates</a> <span class="divider">></span></li>
                         <li>Create Template: Edit Media Pool</li>
-                    </ol>
-    
+                    </ul>
+    				</div>
                 </div>
                 <div class="row">
-                    <div class="col-md-8"><h4>Edit Template's Media Pool</h4><h1 class="mar-none pad-none">[ New Template Name ]</h1></div>
-                    <div class="col-md-4 align-right"><button class="btn btn-medium mar-right-20">Cancel</button>
+                    <div class="span8"><h4>Edit Template's Media Pool</h4><h1 class="mar-none pad-none">Fall '13 Overview</h1></div>
+                    <div class="span4 align-right"><button class="btn btn-medium mar-right-20">Cancel</button>
                     <button class="btn btn-primary btn-medium">Save Template</button></div>
                 </div>
                 <div class="row mar-bot-70">
-                    <div class="col-md-12 meta-row">
+                    <div class="span12 meta-row">
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="span8">
                                     <ul class="meta-bullets">
                                         <li><h4>Grade Span:</h4> K-5 </li>
                                         <li><i class="icon-circle dot"></i><h4>Date Created:</h4> M/D/YY </li>
                                         <li><i class="icon-circle dot"></i><h4>Media for Each Tester:</h4> <i class="icon-film"> Videos (2)</i>, <i class="icon-file-text-alt"> Artifacts (2)</i> </li>
                                     </ul>
                             </div>
-                            <div class="col-md-4">
+                            <div class="span4">
                                     <div class="align-right pad-top-13"> 
                                         <label>
                                             <input type="checkbox" style="margin-top:-4px; margin-right:10px">  Activate this Template
@@ -92,9 +92,9 @@
           <!-- Hidden Video Preview --> 
                 <div class="video-preview">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="span12">
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="span12">
                                     <div style="width:100%; background: #737373; padding:20px;">
                                         <div class="player">
                                             <div id="videoPlayer_wrapper" style="position: relative; width: auto; height: 290px;">
@@ -110,17 +110,17 @@
                                         </div>
                                     </div>
                                     <div class="arrow-down" style="margin-left: 75px"></div>
-                                    <div class="row mar-none"><!-- video row -->
-                                    <div class="col-md-12">
+                                    <div class="row-fluid mar-none"><!-- video row -->
+                                    <div class="span12">
                                         
                                         <div class="row video-row" style="padding: 10px 40px 40px 40px;  margin-bottom:70px; border-top: 0px;">
-                                            <div class="col-md-2 pad-none">
+                                            <div class="span3">
                                                 <a href="#" class="thumbnail">
                                                     <div class="overlay"><i class="icon-play-circle" style="font-size:400%; color:#ff"></i></div>
-                                                    <img src="../images/th_01.png" alt="...">
+                                                    <img src="images/th_01.png" alt="...">
                                                 </a>
                                             </div>
-                                            <div class="col-md-9">
+                                            <div class="span8">
                                                 <h3><a href="#">[ Video Title Goes Here ]</a></h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magullamco laboris nisi ut ...</p>
                                                 <p>Video ID: 123 <i class="icon-circle dot"></i>
@@ -128,7 +128,7 @@
                                                 Usage: 3 Templates
                                                 </p>
                                             </div>
-                                            <div class="col-md-1 align-right">
+                                            <div class="span1 align-right">
                                                 <div class="included"><i class="icon-ok"></i></div>
                                                 <div class="include-action" style="margin-top:20px"><button class="btn btn-default btn-small"><i class="icon-ban-circle"></i></button></div>
                                             </div>
@@ -144,22 +144,22 @@
                 </div>
                 
                 
-          <!-- Content Area -->
+          <!-- Filter Panel -->
                 <div class="row">
-                    <div class="col-md-3 ">
+                    <div class="span3 ">
                         <div class="panel">
                                 <div class="sub-panel-title">
                                     <div style="display:inline; font-size:125%">Filters</div>
                                     <div style="float: right; text-decoration:underline; text-align:right; display:inline">remove all</div></p>
                                 </div>
                                 <div class="filter-group">
-                                    <div class="filter-title"><a href="#"><i class="icon-plus-sign-alt"> Grade Span</i></a></div>
+                                    <div class="filter-title"><a href="#"><i class="icon-plus-sign-alt"> </i> Grade Span</a></div>
                                     <p>
                                     <span class="label label-default">K-5&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
                                     </p>
                                 </div>
                                 <div class="filter-group">
-                                    <div class="filter-title"><a href="#"><i class="icon-minus-sign-alt"> Subjects</i></a></div>
+                                    <div class="filter-title"><a href="#"><i class="icon-minus-sign-alt"> </i> Subjects</a></div>
                                         <ul class="filter-list">
                                             <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  Art</li>
                                             <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  Career</li>
@@ -177,53 +177,56 @@
                                         </ul>
                                 </div>
                                 <div class="filter-group">
-                                    <div class="filter-title"><a href="#"><i class="icon-plus-sign-alt"> Rubric Components</i></a></div>
+                                    <div class="filter-title"><a href="#"><i class="icon-plus-sign-alt"></i></a> Rubric Components</div>
                                     <p>
                                     <span class="label label-default">I-A-4&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
                                         <span class="label label-default">I-B-2&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
                                     </p>
                                 </div>
                                 <div class="filter-group">
-                                    <div class="filter-title"><a href="#"><i class="icon-plus-sign-alt"> Master Scores</i></a></div>
+                                    <div class="filter-title"><a href="#"><i class="icon-plus-sign-alt"></i></a> Master Scores</div>
                                     <p>
                                     <span class="label label-default">Any&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
                                     </p>
                                 </div>
                                 <div class="filter-group">
-                                    <div class="filter-title"><a href="#"><i class="icon-plus-sign-alt"> Length</i></a></div>
+                                    <div class="filter-title"><a href="#"><i class="icon-plus-sign-alt"></i></a> Length</div>
                                     <p>
                                     <span class="label label-default">1-5 min.&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
                                     </p>
                                 </div>
                                 <div class="filter-group ">
-                                    <div class="filter-title"><a href="#" class="disabled"><i class="icon-plus-sign-alt"> FileType</i></a></div>
+                                    <div class="filter-title"><a href="#" class="disabled"><i class="icon-plus-sign-alt"></i></a> FileType</div>
                                 </div>
                         <p style="padding:0 20px 20px 20px">Media filters are used to search the Media Library to find matching videos and artificats for this Template. Choose all that apply.</p>
                             </div>
-                        </div>        
-                    <div class="col-md-8 col-md-offset-1 panel">
-                        <div class="row mar-none" style="border-bottom: 1px dotted #444">
-                            <div class="col-md-7 panel-title"><h2>Media Pool</h3>
+                        </div>   
+                        
+                        
+ <!-- Content Panel -->                            
+                    <div class="span8 offset1 panel">
+                        <div class="row-fluid" style="border-bottom: 1px dotted #444">
+                            <div class="span6 panel-title"><h2>Media Pool</h3>
                                 <p style="padding-top:30px; color:#434343; font-size:90%">All included (<i class="icon-ok"></i>) files may be randomly used by this Template during Calibrations. Excluded (<i class="icon-ban-circle"></i>) files will not be used.
-   </p>
+   								</p>
                             </div>
-                            <div class="col-md-5 align-right ">
+                            <div class="span6 panel-tabs">
                                 <div style="display:inline" class="boxed"><a class="tabbed active"><i class="icon-film"></i> Videos (33)</a></div>
                                 <div style="display:inline"><a class="tabbed "><i class="icon-file-alt "></i> Artifacts (13)</a></div>
                             </div>
                         </div>
-                        <div class="row mar-none">
-                            <div class="col-md-12">
+                        <div class="row-fluid mar-none">
+                            <div class="span12">
                                 <div class="row">
-                                    <div class="col-md-12"><div style="text-align: center;"><h4>Showing 35 Results</h4></div></div>
+                                    <div class="span12"><div style="text-align: center;"><h4>Showing 35 Results</h4></div></div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6 pad-top-30">
+                                <div class="row-fluid">
+                                    <div class="span6">
                                         <form class="form-horizontal" role="form">
                                           <div class="form-group">
-                                            <label class="col-sm-1 control-label">Sort By&nbsp;&nbsp;</label>
-                                            <div class="">
-                                              <select >
+                                            <label style="display:inline; margin-left:20px">Sort By&nbsp;&nbsp;</label>
+                                            
+                                              <select style="width:150px">
                                                 <option>Most Recent</option>
                                                 <option>A-Z</option>
                                                 <option>Z-A</option>
@@ -231,19 +234,21 @@
                                                 <option>TRT</option>
                                                 <option>Usage</option>
                                                 </select>
-                                            </div>
+                                            
                                         </div>
                                         </form>
 
                                     </div>
-                                    <div class="col-md-6 align-right pad-right-20 boxed">
-                                    <ul class="pagination">
-                                      <li class="disabled"><a href="#">&laquo;</a></li>
-                                      <li class="disabled"><a href="#">1</a></li>
-                                      <li><a href="#">2</a></li>
-                                      <li><a href="#">3</a></li>
-                                      <li><a href="#">&raquo;</a></li>
-                                    </ul>
+                                    <div class="span6 align-right pad-right-20 boxed">
+                                    <div class="pagination mar-none">
+                                        <ul class="mar-none">
+                                          <li class="disabled"><a href="#">&laquo;</a></li>
+                                          <li class="disabled"><a href="#">1</a></li>
+                                          <li><a href="#">2</a></li>
+                                          <li><a href="#">3</a></li>
+                                          <li><a href="#">&raquo;</a></li>
+                                        </ul>
+                                      </div>
                                 </div>
                                 </div>
                             </div>
@@ -251,16 +256,16 @@
                         
 <!--  START VIDEO LIST ---->
                         
-                        <div class="row mar-none"><!-- video row -->
-                                    <div class="col-md-12">
-                                        <div class="row video-row">
-                                            <div class="col-md-2 pad-none">
+                        <div class="row-fluid mar-none"><!-- video row -->
+                                    <div class="span12">
+                                        <div class="row-fluid video-row">
+                                            <div class="span3">
                                                 <a href="#" class="thumbnail" id="thumb1" onclick="showVideo();">
                                                     <div class="overlay"><i class="icon-play-circle" style="font-size:400%; color:#ff"></i></div>
-                                                    <img src="../images/th_01.png" alt="...">
+                                                    <img src="images/th_01.png" alt="...">
                                                 </a>
                                             </div>
-                                            <div class="col-md-9">
+                                            <div class="span8">
                                                 <h3><a href="#" onclick="showVideo();">[ Video Title Goes Here ]</a></h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magullamco laboris nisi ut ...</p>
                                                 <p>Video ID: 123 <i class="icon-circle dot"></i>
@@ -268,23 +273,23 @@
                                                 Usage: 3 Templates
                                                 </p>
                                             </div>
-                                            <div class="col-md-1 align-right">
+                                            <div class="span1 align-right">
                                                 <div class="included"><i class="icon-ok"></i></div>
                                                 <div class="include-action" style="margin-top:20px"><button class="btn btn-default btn-small"><i class="icon-ban-circle"></i></button></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                        <div class="row mar-none"><!-- video row -->
-                                    <div class="col-md-12">
-                                        <div class="row video-row">
-                                            <div class="col-md-2 pad-none">
+                        <div class="row-fluid mar-none"><!-- video row -->
+                                    <div class="span12">
+                                        <div class="row-fluid video-row">
+                                            <div class="span3">
                                                 <a href="#" class="thumbnail">
                                                     <div class="overlay"><i class="icon-play-circle" style="font-size:400%; color:#ff"></i></div>
-                                                    <img src="../images/th_02.png" alt="...">
+                                                    <img src="images/th_02.png" alt="...">
                                                 </a>
                                             </div>
-                                            <div class="col-md-9">
+                                            <div class="span8">
                                                 <h3><a href="#">[ Video Title Goes Here ]</a></h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magullamco laboris nisi ut ...</p>
                                                 <p>Video ID: 123 <i class="icon-circle dot"></i>
@@ -292,23 +297,23 @@
                                                 Usage: 0 Templates
                                                 </p>
                                             </div>
-                                            <div class="col-md-1 align-right">
+                                            <div class="span1 align-right">
                                                 <div class="included"><i class="icon-ok"></i></div>
                                                 <div class="include-action" style="margin-top:20px"><button class="btn btn-default btn-small"><i class="icon-ban-circle"></i></button></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                        <div class="row mar-none"><!-- video row -->
-                                    <div class="col-md-12">
-                                        <div class="row video-row" style="background:#eae8e5">
-                                            <div class="col-md-2 pad-none">
+                        <div class="row-fluid mar-none"><!-- video row -->
+                                    <div class="span12">
+                                        <div class="row-fluid video-row" style="background:#eae8e5">
+                                            <div class="span3">
                                                 <a href="#" class="thumbnail">
                                                     <div class="overlay"><i class="icon-play-circle" style="font-size:400%; color:#ff"></i></div>
-                                                    <img src="../images/th_03.png" alt="...">
+                                                    <img src="images/th_03.png" alt="...">
                                                 </a>
                                             </div>
-                                            <div class="col-md-9">
+                                            <div class="span8">
                                                 <h3><a href="#">[ Video Title Goes Here ]</a></h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magullamco laboris nisi ut ...</p>
                                                 <p>Video ID: 123 <i class="icon-circle dot"></i>
@@ -316,23 +321,23 @@
                                                 Usage: 5 Templates
                                                 </p>
                                             </div>
-                                            <div class="col-md-1 align-right">
+                                            <div class="span1 align-right">
                                                 <div class="included" style="background: #979ca1"><i class="icon-ban-circle"></i></div>
                                                 <div class="include-action" style="margin-top:20px"><button class="btn btn-default btn-small"><i class="icon-ok" ></i></button></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                          <div class="row mar-none"><!-- video row -->
-                                    <div class="col-md-12">
-                                        <div class="row video-row">
-                                            <div class="col-md-2 pad-none">
+                          <div class="row-fluid mar-none"><!-- video row -->
+                                    <div class="span12">
+                                        <div class="row-fluid video-row">
+                                            <div class="span3">
                                                 <a href="#" class="thumbnail">
                                                     <div class="overlay"><i class="icon-play-circle" style="font-size:400%; color:#ff"></i></div>
-                                                    <img src="../images/th_01.png" alt="...">
+                                                    <img src="images/th_01.png" alt="...">
                                                 </a>
                                             </div>
-                                            <div class="col-md-9">
+                                            <div class="span8">
                                                 <h3><a href="#">[ Video Title Goes Here ]</a></h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magullamco laboris nisi ut ...</p>
                                                 <p>Video ID: 123 <i class="icon-circle dot"></i>
@@ -340,23 +345,23 @@
                                                 Usage: 3 Templates
                                                 </p>
                                             </div>
-                                            <div class="col-md-1 align-right">
+                                            <div class="span1 align-right">
                                                 <div class="included"><i class="icon-ok"></i></div>
                                                 <div class="include-action" style="margin-top:20px"><button class="btn btn-default btn-small"><i class="icon-ban-circle"></i></button></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                        <div class="row mar-none"><!-- video row -->
-                                    <div class="col-md-12">
-                                        <div class="row video-row">
-                                            <div class="col-md-2 pad-none">
+                        <div class="row-fluid mar-none"><!-- video row -->
+                                    <div class="span12">
+                                        <div class="row-fluid video-row">
+                                            <div class="span3">
                                                 <a href="#" class="thumbnail">
                                                     <div class="overlay"><i class="icon-play-circle" style="font-size:400%; color:#ff"></i></div>
-                                                    <img src="../images/th_02.png" alt="...">
+                                                    <img src="images/th_02.png" alt="...">
                                                 </a>
                                             </div>
-                                            <div class="col-md-9">
+                                            <div class="span8">
                                                 <h3><a href="#">[ Video Title Goes Here ]</a></h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magullamco laboris nisi ut ...</p>
                                                 <p>Video ID: 123 <i class="icon-circle dot"></i>
@@ -364,23 +369,23 @@
                                                 Usage: 3 Templates
                                                 </p>
                                             </div>
-                                            <div class="col-md-1 align-right">
+                                            <div class="span1 align-right">
                                                 <div class="included"><i class="icon-ok"></i></div>
                                                 <div class="include-action" style="margin-top:20px"><button class="btn btn-default btn-small"><i class="icon-ban-circle"></i></button></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                        <div class="row mar-none"><!-- video row -->
-                                    <div class="col-md-12">
-                                        <div class="row video-row">
-                                            <div class="col-md-2 pad-none">
+                        <div class="row-fluid mar-none"><!-- video row -->
+                                    <div class="span12">
+                                        <div class="row-fluid video-row">
+                                            <div class="span3">
                                                 <a href="#" class="thumbnail">
                                                     <div class="overlay"><i class="icon-play-circle" style="font-size:400%; color:#ff"></i></div>
-                                                    <img src="../images/th_03.png" alt="...">
+                                                    <img src="images/th_03.png" alt="...">
                                                 </a>
                                             </div>
-                                            <div class="col-md-9">
+                                            <div class="span8">
                                                 <h3><a href="#">[ Video Title Goes Here ]</a></h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magullamco laboris nisi ut ...</p>
                                                 <p>Video ID: 123 <i class="icon-circle dot"></i>
@@ -388,23 +393,23 @@
                                                 Usage: 3 Templates
                                                 </p>
                                             </div>
-                                            <div class="col-md-1 align-right">
+                                            <div class="span1 align-right">
                                                 <div class="included"><i class="icon-ok"></i></div>
                                                 <div class="include-action" style="margin-top:20px"><button class="btn btn-default btn-small"><i class="icon-ban-circle"></i></button></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                          <div class="row mar-none"><!-- video row -->
-                                    <div class="col-md-12">
-                                        <div class="row video-row">
-                                            <div class="col-md-2 pad-none">
+                          <div class="row-fluid mar-none"><!-- video row -->
+                                    <div class="span12">
+                                        <div class="row-fluid video-row">
+                                            <div class="span3">
                                                 <a href="#" class="thumbnail">
                                                     <div class="overlay"><i class="icon-play-circle" style="font-size:400%; color:#ff"></i></div>
-                                                    <img src="../images/th_01.png" alt="...">
+                                                    <img src="images/th_01.png" alt="...">
                                                 </a>
                                             </div>
-                                            <div class="col-md-9">
+                                            <div class="span8">
                                                 <h3><a href="#">[ Video Title Goes Here ]</a></h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magullamco laboris nisi ut ...</p>
                                                 <p>Video ID: 123 <i class="icon-circle dot"></i>
@@ -412,23 +417,23 @@
                                                 Usage: 3 Templates
                                                 </p>
                                             </div>
-                                            <div class="col-md-1 align-right">
+                                            <div class="span1 align-right">
                                                 <div class="included"><i class="icon-ok"></i></div>
                                                 <div class="include-action" style="margin-top:20px"><button class="btn btn-default btn-small"><i class="icon-ban-circle"></i></button></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                        <div class="row mar-none"><!-- video row -->
-                                    <div class="col-md-12">
-                                        <div class="row video-row">
-                                            <div class="col-md-2 pad-none">
+                        <div class="row-fluid mar-none"><!-- video row -->
+                                    <div class="span12">
+                                        <div class="row-fluid video-row">
+                                            <div class="span3">
                                                 <a href="#" class="thumbnail">
                                                     <div class="overlay"><i class="icon-play-circle" style="font-size:400%; color:#ff"></i></div>
-                                                    <img src="../images/th_02.png" alt="...">
+                                                    <img src="images/th_02.png" alt="...">
                                                 </a>
                                             </div>
-                                            <div class="col-md-9">
+                                            <div class="span8">
                                                 <h3><a href="#">[ Video Title Goes Here ]</a></h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magullamco laboris nisi ut ...</p>
                                                 <p>Video ID: 123 <i class="icon-circle dot"></i>
@@ -436,23 +441,23 @@
                                                 Usage: 3 Templates
                                                 </p>
                                             </div>
-                                            <div class="col-md-1 align-right">
+                                            <div class="span1 align-right">
                                                 <div class="included"><i class="icon-ok"></i></div>
                                                 <div class="include-action" style="margin-top:20px"><button class="btn btn-default btn-small"><i class="icon-ban-circle"></i></button></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                        <div class="row mar-none"><!-- video row -->
-                                    <div class="col-md-12">
-                                        <div class="row video-row">
-                                            <div class="col-md-2 pad-none">
+                        <div class="row-fluid mar-none"><!-- video row -->
+                                    <div class="span12">
+                                        <div class="row-fluid video-row">
+                                            <div class="span3">
                                                 <a href="#" class="thumbnail">
                                                     <div class="overlay"><i class="icon-play-circle" style="font-size:400%; color:#ff"></i></div>
-                                                    <img src="../images/th_03.png" alt="...">
+                                                    <img src="images/th_03.png" alt="...">
                                                 </a>
                                             </div>
-                                            <div class="col-md-9">
+                                            <div class="span8">
                                                 <h3><a href="#">[ Video Title Goes Here ]</a></h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magullamco laboris nisi ut ...</p>
                                                 <p>Video ID: 123 <i class="icon-circle dot"></i>
@@ -460,23 +465,23 @@
                                                 Usage: 3 Templates
                                                 </p>
                                             </div>
-                                            <div class="col-md-1 align-right">
+                                            <div class="span1 align-right">
                                                 <div class="included"><i class="icon-ok"></i></div>
                                                 <div class="include-action" style="margin-top:20px"><button class="btn btn-default btn-small"><i class="icon-ban-circle"></i></button></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                        <div class="row mar-none"><!-- video row -->
-                                    <div class="col-md-12">
-                                        <div class="row video-row">
-                                            <div class="col-md-2 pad-none">
+                        <div class="row-fluid mar-none"><!-- video row -->
+                                    <div class="span12">
+                                        <div class="row-fluid video-row">
+                                            <div class="span3">
                                                 <a href="#" class="thumbnail">
                                                     <div class="overlay"><i class="icon-play-circle" style="font-size:400%; color:#ff"></i></div>
-                                                    <img src="../images/th_03.png" alt="...">
+                                                    <img src="images/th_03.png" alt="...">
                                                 </a>
                                             </div>
-                                            <div class="col-md-9">
+                                            <div class="span8">
                                                 <h3><a href="#">[ Video Title Goes Here ]</a></h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magullamco laboris nisi ut ...</p>
                                                 <p>Video ID: 123 <i class="icon-circle dot"></i>
@@ -484,7 +489,7 @@
                                                 Usage: 3 Templates
                                                 </p>
                                             </div>
-                                            <div class="col-md-1 align-right">
+                                            <div class="span1 align-right">
                                                 <div class="included"><i class="icon-ok"></i></div>
                                                 <div class="include-action" style="margin-top:20px"><button class="btn btn-default btn-small"><i class="icon-ban-circle"></i></button></div>
                                             </div>
@@ -492,13 +497,15 @@
                                     </div>
                                 </div>
                            <div style="text-align:center">
-                            <ul class="pagination">
-                                      <li class="disabled"><a href="#">&laquo;</a></li>
-                                      <li class="disabled"><a href="#">1</a></li>
-                                      <li><a href="#">2</a></li>
-                                      <li><a href="#">3</a></li>
-                                      <li><a href="#">&raquo;</a></li>
-                            </ul></div>
+                            <div class="pagination">
+                                        <ul class="">
+                                          <li class="disabled"><a href="#">&laquo;</a></li>
+                                          <li class="disabled"><a href="#">1</a></li>
+                                          <li><a href="#">2</a></li>
+                                          <li><a href="#">3</a></li>
+                                          <li><a href="#">&raquo;</a></li>
+                                        </ul>
+                                      </div>
                         </div>
                     </div>
                 </div><!-- row !-->

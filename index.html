@@ -14,8 +14,7 @@
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 
       
-      <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-      <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
@@ -33,11 +32,11 @@
       <div class="ts-navbar"><img src="images/mainNav.png" width="1565px" height="38px"></div>
 
     
-    <div class="admin-wrap">
-        <div class="ts-subnav">
-            <div class="container">
+        <div class="admin-wrap">
+            <div class="ts-subnav">
                 <div class="container">
                     <div class="row">
+                        <div class="span12">
                         <ul class="nav mar-none">
                             <li class="secondary">Observer</li>
                             <li>Admin Overview</li>
@@ -45,41 +44,43 @@
                             <li class="active">Calibration Templates</li>
                             <li>Calibration Windows</li>
                         </ul>
+                         </div>
                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container content">
+        <div class="container bread-none">
             <div class="row mar-bot-70">
-                <div class="col-md-8"><h1 class="mar-none pad-none">Manage Calibration Templates</h1></div>
-                <div class="col-md-4 align-right"><button class="btn btn-primary btn-medium">Create New Template</button></div>
+                <div class="span8"><h1 class="mar-none pad-none">Manage Calibration Templates</h1></div>
+                <div class="span4 align-right"><button class="btn btn-primary btn-medium">Create New Template</button></div>
             </div>
       <!-- Main component for a primary marketing message or call to action -->
             <div class="row">
-                <div class="col-md-12">
+                <div class="span12">
                   <div class="panel">
-                        <div class="row mar-none">
-                                <div class="col-md-6 panel-title"><h2>All Calibration Templates</h2></div>
-                                <div class="col-md-6 align-right pad-right-20 boxed">
-                                    <ul class="pagination">
+                        <div class="row-fluid">
+                                <div class="span5 panel-title"><h2>All Calibration Templates</h2></div>
+                                <div class="span6 align-right">
+                                    <div class="pagination">
+                                    <ul class="">
                                       <li class="disabled"><a href="#">&laquo;</a></li>
                                       <li class="disabled"><a href="#">1</a></li>
                                       <li><a href="#">2</a></li>
                                       <li><a href="#">3</a></li>
                                       <li><a href="#">&raquo;</a></li>
                                     </ul>
+                                    </div>
                                 </div>
                         </div>
                       <div class="table table-hover">
                           <table style="width:100%">
                             <thead>
                                 <tr>
-                                    <th>Modified</th>
-                                    <th>Status</th>
-                                    <th>Template Name</th>
-                                    <th>Grades</th>
-                                    <th>Media</th>
-                                    <th>Usage</th>
+                                    <th>Modified  <i class="icon-sort"></i></th>
+                                    <th>Status  <i class="icon-sort"></i></th>
+                                    <th>Template Name  <i class="icon-sort"></i></th>
+                                    <th>Grades  <i class="icon-sort"></i></th>
+                                    <th>Media  <i class="icon-sort"></i></th>
+                                    <th>Usage  <i class="icon-sort"></i></th>
                                     <th>Actions</th>
                                 </tr>
                                 
@@ -87,10 +88,35 @@
                             <tbody>
                                 <tr>
                                     <td>M/D/YY</td>
+                                    <td><span class="badge badge-success">Active</span></td>
+                                    <td><a href="#">Fall Calibration Elementry</a></td>
+                                    <td>K-6</td>
+                                    <td><i class="icon-film"> Videos (2)</i><br><i class="icon-file-alt"> Artifacts (2)</i></td>
+                                    <td><a href="#">Fall '13 Calibration</a><br>
+                                        <a href="#">MLK Elementry Spring</a><br>
+                                    </td>
+                                    <td><a href="#"><i class="icon-pencil mar-right-20"></i></a>
+                                        <a href="#"><i class="icon-trash"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
                                     <td>M/D/YY</td>
+                                    <td><span class="badge">Not Active</span></td>
+                                    <td><a href="#">Fall Calibration Draft Tempalte</a></td>
+                                    <td>K-12</td>
+                                    <td><i class="icon-film"> Videos (0)</i><br><i class="icon-file-alt"> Artifacts (0)</i></td>
+                                    <td>n/a
+                                    </td>
+                                    <td><a href="#"><i class="icon-pencil mar-right-20"></i></a>
+                                        <a href="#"><i class="icon-trash"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>M/D/YY</td>
+                                    <td><span class="badge">Not Active</span></td>
                                     <td><a href="#">[ Template Name ] goes here</a></td>
                                     <td>K-6</td>
-                                    <td><i class="icon-film"> Videos (2)</i><br><i class="icon-file-text-alt"> Artifacts (2)</i></td>
+                                    <td><i class="icon-film"> Videos (2)</i><br><i class="icon-file-alt"> Artifacts (2)</i></td>
                                     <td><a href="#">[ Calibration Window Name ]</a><br>
                                         <a href="#">[ Calibration Window Name ]</a><br>
                                         <a href="#">[ Calibration Window Name ]</a>
@@ -101,10 +127,10 @@
                                 </tr>
                                 <tr>
                                     <td>M/D/YY</td>
-                                    <td>M/D/YY</td>
+                                    <td><span class="badge">Not Active</span></td>
                                     <td><a href="#">[ Template Name ] goes here</a></td>
                                     <td>K-6</td>
-                                    <td><i class="icon-film"> Videos (2)</i><br><i class="icon-file-text-alt"> Artifacts (2)</i></td>
+                                    <td><i class="icon-film"> Videos (2)</i><br><i class="icon-file-alt"> Artifacts (2)</i></td>
                                     <td><a href="#">[ Calibration Window Name ]</a><br>
                                         <a href="#">[ Calibration Window Name ]</a><br>
                                         <a href="#">[ Calibration Window Name ]</a>
@@ -115,10 +141,10 @@
                                 </tr>
                                 <tr>
                                     <td>M/D/YY</td>
-                                    <td>M/D/YY</td>
+                                    <td><span class="badge">Not Active</span></td>
                                     <td><a href="#">[ Template Name ] goes here</a></td>
                                     <td>K-6</td>
-                                    <td><i class="icon-film"> Videos (2)</i><br><i class="icon-file-text-alt"> Artifacts (2)</i></td>
+                                    <td><i class="icon-film"> Videos (2)</i><br><i class="icon-file-alt"> Artifacts (2)</i></td>
                                     <td><a href="#">[ Calibration Window Name ]</a><br>
                                         <a href="#">[ Calibration Window Name ]</a><br>
                                         <a href="#">[ Calibration Window Name ]</a>
@@ -129,10 +155,10 @@
                                 </tr>
                                 <tr>
                                     <td>M/D/YY</td>
-                                    <td>M/D/YY</td>
+                                    <td><span class="badge">Not Active</span></td>
                                     <td><a href="#">[ Template Name ] goes here</a></td>
                                     <td>K-6</td>
-                                    <td><i class="icon-film"> Videos (2)</i><br><i class="icon-file-text-alt"> Artifacts (2)</i></td>
+                                    <td><i class="icon-film"> Videos (2)</i><br><i class="icon-file-alt"> Artifacts (2)</i></td>
                                     <td><a href="#">[ Calibration Window Name ]</a><br>
                                         <a href="#">[ Calibration Window Name ]</a><br>
                                         <a href="#">[ Calibration Window Name ]</a>
@@ -143,10 +169,10 @@
                                 </tr>
                                 <tr>
                                     <td>M/D/YY</td>
-                                    <td>M/D/YY</td>
+                                    <td><span class="badge">Not Active</span></td>
                                     <td><a href="#">[ Template Name ] goes here</a></td>
                                     <td>K-6</td>
-                                    <td><i class="icon-film"> Videos (2)</i><br><i class="icon-file-text-alt"> Artifacts (2)</i></td>
+                                    <td><i class="icon-film"> Videos (2)</i><br><i class="icon-file-alt"> Artifacts (2)</i></td>
                                     <td><a href="#">[ Calibration Window Name ]</a><br>
                                         <a href="#">[ Calibration Window Name ]</a><br>
                                         <a href="#">[ Calibration Window Name ]</a>
@@ -157,10 +183,10 @@
                                 </tr>
                                 <tr>
                                     <td>M/D/YY</td>
-                                    <td>M/D/YY</td>
+                                    <td><span class="badge">Not Active</span></td>
                                     <td><a href="#">[ Template Name ] goes here</a></td>
                                     <td>K-6</td>
-                                    <td><i class="icon-film"> Videos (2)</i><br><i class="icon-file-text-alt"> Artifacts (2)</i></td>
+                                    <td><i class="icon-film"> Videos (2)</i><br><i class="icon-file-alt"> Artifacts (2)</i></td>
                                     <td><a href="#">[ Calibration Window Name ]</a><br>
                                         <a href="#">[ Calibration Window Name ]</a><br>
                                         <a href="#">[ Calibration Window Name ]</a>
@@ -171,38 +197,10 @@
                                 </tr>
                                 <tr>
                                     <td>M/D/YY</td>
-                                    <td>M/D/YY</td>
+                                    <td><span class="badge">Not Active</span></td>
                                     <td><a href="#">[ Template Name ] goes here</a></td>
                                     <td>K-6</td>
-                                    <td><i class="icon-film"> Videos (2)</i><br><i class="icon-file-text-alt"> Artifacts (2)</i></td>
-                                    <td><a href="#">[ Calibration Window Name ]</a><br>
-                                        <a href="#">[ Calibration Window Name ]</a><br>
-                                        <a href="#">[ Calibration Window Name ]</a>
-                                    </td>
-                                    <td><a href="#"><i class="icon-pencil mar-right-20"></i></a>
-                                        <a href="#"><i class="icon-trash"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>M/D/YY</td>
-                                    <td>M/D/YY</td>
-                                    <td><a href="#">[ Template Name ] goes here</a></td>
-                                    <td>K-6</td>
-                                    <td><i class="icon-film"> Videos (2)</i><br><i class="icon-file-text-alt"> Artifacts (2)</i></td>
-                                    <td><a href="#">[ Calibration Window Name ]</a><br>
-                                        <a href="#">[ Calibration Window Name ]</a><br>
-                                        <a href="#">[ Calibration Window Name ]</a>
-                                    </td>
-                                    <td><a href="#"><i class="icon-pencil mar-right-20"></i></a>
-                                        <a href="#"><i class="icon-trash"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>M/D/YY</td>
-                                    <td>M/D/YY</td>
-                                    <td><a href="#">[ Template Name ] goes here</a></td>
-                                    <td>K-6</td>
-                                    <td><i class="icon-film"> Videos (2)</i><br><i class="icon-file-text-alt"> Artifacts (2)</i></td>
+                                    <td><i class="icon-film"> Videos (2)</i><br><i class="icon-file-alt"> Artifacts (2)</i></td>
                                     <td><a href="#">[ Calibration Window Name ]</a><br>
                                         <a href="#">[ Calibration Window Name ]</a><br>
                                         <a href="#">[ Calibration Window Name ]</a>
@@ -215,6 +213,19 @@
                             </tbody>
                           </table>
                       </div>
+                      <div class="row mar-none">
+                                <div class="span12 align-center">
+                                    <div class="pagination">
+                                    <ul class="">
+                                      <li class="disabled"><a href="#">&laquo;</a></li>
+                                      <li class="disabled"><a href="#">1</a></li>
+                                      <li><a href="#">2</a></li>
+                                      <li><a href="#">3</a></li>
+                                      <li><a href="#">&raquo;</a></li>
+                                    </ul>
+                                    </div>
+                                </div>
+                        </div>
                   </div> <!-- panel -->
                 </div>
             </div><!-- row !-->

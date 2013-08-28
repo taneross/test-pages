@@ -6,6 +6,7 @@
 body {
     background: #f4f4f4;
     color: #4444444;
+	font-family:"Arial", Arial, Helvetica, sans-serif;
 }
 
 /* ********** Headings **********  */
@@ -37,6 +38,7 @@ h4 {
 a {
 	color: #2F4FA2;
 	text-decoration: none;
+	cursor:pointer;
 }
 a:hover {
 	color: #182956;
@@ -226,6 +228,10 @@ input {
     text-align:right;
 }
 
+.align-center {
+    text-align:center;
+}
+
 .boxed {
     box-sizing:border-box;
     -moz-box-sizing:border-box; /* Firefox */
@@ -316,18 +322,26 @@ td {
     padding-top:80px
 }
 
-.second-content {
-    padding-top:20px
-}
+
 .bread-wrap {
     width:100%;
-    padding-bottom:60px;
+    padding-bottom:40px;
+}
+
+.bread-none {
+	padding-top:70px;
 }
     
 
 .panel-title {
     padding-top:20px;
     margin-bottom: 35px;
+	padding-left:30px
+}
+
+.panel-tabs {
+	padding: 20px;
+	text-align:right;
 }
 
 .meta-row {
@@ -371,7 +385,7 @@ td {
 
 .tabbed {
     margin-left:30px;
-    margin-top:10px;
+    padding-top:20px;
 }
 
 
@@ -400,12 +414,22 @@ td {
     display:none;
 }
 
+.panel {
+	background:#fff;
+	border-radius: 10px;
+	color:#444444;
+}
+
 /*---------------------
   Bootstrap overwrites */
 
 
- .breadcrumbs{
-    background-color: none;
+ .breadcrumb{
+    background-color: #fff;
+	font-size:85%;
+	padding:15px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
 }
 
 .label {
