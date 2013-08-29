@@ -532,9 +532,9 @@ td {
 
 
  .breadcrumb{
-    background-color: #fff;
+    background-color: none;
 	font-size:85%;
-	padding:15px;
+	padding:15px 0;
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
 }
