@@ -31,7 +31,6 @@
         }
 		function hideSearch() {
             document.getElementById('subject-search').style.display = "none";
-			window.open("mediapool2.html","_self")
         }
 		function showSearch() {
             document.getElementById('subject-search').style.display = "block";
@@ -47,10 +46,6 @@
 			});
 	  </script>
       
-      <style>
-	  	#math { display:none; }
-		#art { display:none; }
-	  </style>
   </head>
 
   <body>
@@ -204,64 +199,52 @@
                 </div>
                 
                 
-	            <!-- Filter Panel -->
-	                  <div class="row">
-	                      <div class="span3 ">
-	                          <div class="panel">
-	                                  <div class="sub-panel-title">
-	                                      <div style="display:inline; font-size:125%">Filters</div>
-	                                      <div style="float: right; text-decoration:underline; text-align:right; display:inline">remove all</div></p>
-	                                  </div>
-	                                  <div class="filter-group">
-	                                      <div class="filter-title"><a href="#"><i class="icon-plus-sign-alt"> </i> Grade Span</a></div>
-	                                      <p>
-	                                      <span class="label label-default">K-5&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
-	                                      </p>
-	                                  </div>
-	                                  <div class="filter-group">
-	                                      <div class="filter-title"><a href="mediapool2.html"><i class="icon-minus-sign-alt"> </i> Subjects</a></div>
-	                                          <ul class="filter-list">
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  Art</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  Career</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  English</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  History</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  Mathmatics</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  Music</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  Reading/Literacy</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  Science</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  Social Sciences</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  Tech Ed</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  Band</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  Chior</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  PE</li>
-	                                          </ul>
-	                                  </div>
-	                                  <div class="filter-group">
-	                                      <div class="filter-title"><a href="#"><i class="icon-plus-sign-alt"></i></a> Rubric Components</div>
-	                                      <p>
-	                                      <span class="label label-default">I-A-4&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
-	                                          <span class="label label-default">I-B-2&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
-	                                      </p>
-	                                  </div>
-	                                  <div class="filter-group">
-	                                      <div class="filter-title"><a href="#"><i class="icon-plus-sign-alt"></i></a> Master Scores</div>
-	                                      <p>
-	                                      <span class="label label-default">Any&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
-	                                      </p>
-	                                  </div>
-	                                  <div class="filter-group">
-	                                      <div class="filter-title"><a href="#"><i class="icon-plus-sign-alt"></i></a> Video Length (TRT)</div>
-	                                      <p>
-	                                      <span class="label label-default">1-5 min.&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
-	                                      </p>
-	                                  </div>
-	                                  <div class="filter-group ">
-	                                      <div class="filter-title"><a href="#" class="disabled"><i class="icon-plus-sign-alt"></i></a> FileType</div>
-	                                  </div>
-	                          <p style="padding:0 20px 20px 20px">Media filters are used to search the Media Library to find matching videos and artificats for this Template. Choose all that apply.</p>
-	                              </div>
-	                          </div>   
-
+          <!-- Filter Panel -->
+                <div class="row">
+                    <div class="span3 ">
+                        <div class="panel">
+                                <div class="sub-panel-title">
+                                    <div style="display:inline; font-size:125%">Filters</div>
+                                    <div style="float: right; text-decoration:underline; text-align:right; display:inline">remove all</div></p>
+                                </div>
+                                <div class="filter-group">
+                                    <div class="filter-title"><a href="#"><i class="icon-plus-sign"> </i> Grade Span</a></div>
+                                    <p>
+                                    <span class="label label-default">K-5&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
+                                    </p>
+                                </div>
+                                <div class="filter-group">
+                                    <div class="filter-title"><a onClick="showSearch()"><i class="icon-plus-sign"> </i> Subjects</a></div>
+                                    <p>
+                                    <span class="label label-default">Mathmatics&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
+                                        <span class="label label-default">Art&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
+                                    </p>
+                                </div>
+                                <div class="filter-group">
+                                    <div class="filter-title"><a href="#"><i class="icon-plus-sign"></i> Rubric Components</a></div>
+                                    <p>
+                                    <span id="test" class="label label-default">I-A-4&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
+                                        <span class="label label-default">I-B-2&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
+                                    </p>
+                                </div>
+                                <div class="filter-group">
+                                    <div class="filter-title"><a href="#"><i class="icon-plus-sign"></i> Master Scores</a></div>
+                                    <p>
+                                    <span class="label label-default">Any&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
+                                    </p>
+                                </div>
+                                <div class="filter-group">
+                                    <div class="filter-title"><a href="#"><i class="icon-plus-sign"></i> Video Length (TRT)</a></div>
+                                    <p>
+                                    <span class="label label-default">1-5 min.&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
+                                    </p>
+                                </div>
+                                <div class="filter-group ">
+                                    <div class="filter-title"><a href="#" class="disabled"><i class="icon-plus-sign"></i></a> FileType</div>
+                                </div>
+                        <p style="padding:0 20px 20px 20px">Media filters are used to search the Media Library to find matching videos and artificats for this Template. Choose all that apply.</p>
+                            </div>
+                        </div>   
                         
                         
  <!-- Content Panel -->                            

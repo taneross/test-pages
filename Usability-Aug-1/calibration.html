@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>Navbar Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+      
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+      
+      <script>
+        function showVideo() {
+            document.getElementById('video-preview').style.display = "block";
+            console.log("show video preveiew");
+        }
+      </script>
+  </head>
+
+  <body>
+
+      <!-- Static navbar -->
+      <div class="ts-navbar"><img src="images/mainNav.png" width="1565px" height="38px"></div>
+
+        <div class="admin-wrap">
+            <div class="ts-subnav">
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                         <ul class="nav mar-none">
+                            <li class="secondary">Observer</li>
+                            <li><a href="index.html">Admin Overview</a></li>
+                            <li>Rubric</li>
+                            <li><a href="templates.html">Calibration Templates</a></li>
+                            <li class="active">Calibration Windows</li>
+                            
+                        </ul>
+                         </div>
+                   </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row bread-wrap">
+                    <div class="span12">
+                    <ul class="breadcrumb">
+                        <li><a href="calibrations.html">Calibration Windows</a> <span class="divider">></span></li>
+                        <li>Create Window: Define Scoring</li>
+                    </ul>
+    				</div>
+                </div>
+                <div class="row">
+                    <div class="span8"><h1 class="mar-none pad-none">Fall Window - Elementary</h1></div>
+                    <div class="span4 align-right">
+                    	<a class="btn btn-primary btn-medium" href="calibration.html">Edit Window</a>
+					</div>
+                </div>
+                <div class="row ">
+                    <div class="span12 meta-row">
+                        <div class="row">
+                            <div class="span10">
+                                    <ul class="meta-bullets">
+                                        <li><i class="icon-circle dot"></i><h4>Date Range:</h4> M/D/YY to M/D/YY</li>
+                                        <li><i class="icon-circle dot"></i><h4>Model:</h4> Accountability</li>
+                                        <li><i class="icon-circle dot"></i><h4>Template:</h4> Fall '13 Overview</li>
+										<li><i class="icon-circle dot"></i><h4>Rubric:</h4> [ Name of Default ]</li>
+                                    </ul>
+                            </div>
+                            <div class="span2">
+                                    <div class="align-right pad-top-13"> 
+                                        <button class="btn btn-small"><i class="icon-trash"></i> Delete</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  
+                        
+ <!-- Content Panel -->   
+ 				<div class="row">                         
+                    <div class="span9 panel">
+                        <div class="row-fluid" style="border-bottom: 1px dotted #444">
+                            <div class="span6 panel-title"><h2>Calibration Settings</h3>
+                               
+                            </div>
+                           
+                        </div>
+                        <div class="row-fluid panel-content"> <!--content -->
+                      			<div class="row-fluid">
+                                	<div class="span7">
+                                        <h3>Component Results</h3>
+                                         <p><div class="badge badge-success">Exact</div> is 0 levels from the Master Score.</p>
+                                        <p><div class="badge badge-warning">Adjacent</div> is 1 level above or below the Master Score.</p>
+                                        <p><div class="badge badge-important">Discrepant</div> is 2 or more levels above or below the Master Score.</p>
+                                	</div>
+                                    <div class="span5">
+                                        <h3>Component Weight/Points</h3>
+                                        <p><div class="badge badge-success">Exact</div> has a weight of 3.</p>
+                                       <p><div class="badge badge-warning">Adjacent</div> has a weight of 1.</p>
+                                       <p><div class="badge badge-important">Discrepant</div> has a weight of 0.</p>
+                                         
+                                	</div>
+                                    </div>
+                                </div>  
+                                <div class="row-fluid panel-content">
+                                	<div class="span12">
+                                        <h3>Cut Score Categories</h3>
+                                        <p><div class="badge badge-success"> </div> Calibrated is: 100% >= 80% of total possible.</p>
+                                      
+                                       <p> <div class="badge badge-warning"> </div> Provisionally Calibrated is: less than 80% >= 65 % of total possible.</p>
+                                        <p><div class="badge badge-important"> </div> Not Calibrated is: less than 65% >= 0% of total possible.</p>
+                                    </div>
+                                    <!--<div class="span5">
+                                        <p>Determining your Total Possible Points. <h4 class="inline">Fall '13 Overview</h4> as the Calibration Template for this Window.  It defines: 2 Videos, 2 Artifacts. <p>
+                                            <h4 class="inline">Total Score Possible:</h4> <br>
+                                            2(videos) x 7 (components) x 3(weight for exact)
+                                            + 2(artifact) x 7 (components) x 3(weight for exact)
+                                            <br>= <h4 class="inline">84 Total Possible Points</h4>
+                                       </div>-->
+                                </div> 
+                            </div><!-- panel !-->
+                            
+                        <div class="span3"><!--sidebar-->
+                            <h3>Observers for this Calibration</h3>
+                            <div class="sidebar-group-top"><a href="#">Manage Users (UMS)</a></div>
+                            <div class="sidebar-group-top">
+                            
+	                            <h4>Groups</h4>
+	                            <ul>
+	                            	<li><a hfre="#">MLK Principals</a></li>
+	                           	</ul>
+	                            <h4>Observers</h4>
+	                            <ul>
+	                            	<li><a hfre="#">Andrew Johnson</a></li>
+									<li><a hfre="#">Tara Smith</a></li>
+									<li><a hfre="#">Jack Wolf</a></li>
+	                           	</ul>
+
+                        	</div>
+                        </div>
+                    </div>
+                </div><!-- row !-->
+            </div> <!-- content -->
+            
+        </div> <!-- admin-wrap -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

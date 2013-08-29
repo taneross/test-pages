@@ -15,7 +15,7 @@
 
       
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
-
+	<link href="js/select2.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -29,10 +29,28 @@
             document.getElementById('video-preview').style.display = "block";
             console.log("show video preveiew");
         }
+		function hideSearch() {
+            document.getElementById('subject-search').style.display = "none";
+			window.open("mediapool2.html","_self")
+        }
+		function showSearch() {
+            document.getElementById('subject-search').style.display = "block";
+        }
 	
 		
 		
       </script>
+      
+      <script id="script_e9">
+			$(document).ready(function() {
+				$("#e9").select2();
+			});
+	  </script>
+      
+      <style>
+	  	#math { display:none; }
+		#art { display:none; }
+	  </style>
   </head>
 
   <body>
@@ -47,10 +65,11 @@
                         <div class="span12">
                         <ul class="nav mar-none">
                             <li class="secondary">Observer</li>
-                            <li>Admin Overview</li>
+                            <li><a href="index.html">Admin Overview</a></li>
                             <li>Rubric</li>
-                            <li class="active"><a href="index.html">Calibration Templates</a></li>
-                            <li>Calibration Windows</li>
+                            <li class="active">Calibration Templates</li>
+                            <li><a href="calibrations.html">Calibration Windows</a></li>
+                            
                         </ul>
                          </div>
                    </div>
@@ -60,7 +79,7 @@
                 <div class="row bread-wrap">
                     <div class="span12">
                     <ul class="breadcrumb">
-                        <li><a href="#">Calibration Templates</a> <span class="divider">></span></li>
+                        <li><a href="templates.html">Calibration Templates</a> <span class="divider">></span></li>
                         <li>Create Template: Edit Media Pool</li>
                     </ul>
     				</div>
@@ -93,30 +112,27 @@
           <!-- Hidden Subject Search -->
           
           <div id="subject-search">
-          	<div class="subject-search">
+          	<div class="subject-search" id="subject-orient")>
                  <div class="form-group">
-                            <label for="">Search Filters:  Subject</label>
-                           <script>
-                            	var src= "['Any','Art','Career','English','Language other than English','Mathematics','Music','Reading & Language Arts','Science','Social Sciences','Tech Ed','Band','Choir','PE','PLTW']"
-                           ;
-								
-								</script>
-                            <input type="text" class="span3" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Ahmedabad&quot;,&quot;Akola&quot;,&quot;Asansol&quot;,&quot;Aurangabad&quot;,&quot;Bangaluru&quot;,&quot;Baroda&quot;,&quot;Belgaon&quot;,&quot;Berhumpur&quot;,&quot;Calicut&quot;,&quot;Chennai&quot;,&quot;Chapra&quot;,&quot;Cherapunji&quot;]">
-</div>
-                  </div>
-               <span class="label label-default">Mathmatics&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
-               <span class="label label-default">Science&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
+                 <div style="border-bottom:1px dotted #444444; margin-bottom:10px"><h4 style="margin:none;">Search Filters:  Subject</h4></div>
+                  <select id="e9" class="populate select2-offscreen" style="width:300px" name="e9" multiple="" tabindex="-1">
+                
+                    <option value="Art">Art</option>
+                    <option value="HI">Career</option>
+                    <option value="HI">English</option>
+                    <option value="HI">Foreign Language</option>
+                    <option value="HI">Mathmatics</option>
+                    <option value="HI">Music</option>
+                    <option value="HI">Reading/Language Arts</option>
+                    <option value="HI">Science</option>
+                    <option value="HI">Social Studies</option>
+                    <option value="HI">Tech Ed</option>
+            	</select>
+
+				</div>
+                <div class="align-right"><a onClick="hideSearch()" class="btn btn-default mar-top-20">Done</a></div>
            </div>
-               <div class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown trigger</a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                <li>A</li>
-                <li>B</li>
-                </ul>
-               </div>
-           
-           
-           </div>         
+         </div>         
           
           <!-- end subject search -->
                   
@@ -203,16 +219,15 @@
                                     </p>
                                 </div>
                                 <div class="filter-group">
-                                    <div class="filter-title"><a href="#"><i class="icon-plus-sign"> </i> Subjects</a></div>
+                                    <div class="filter-title"><a onClick="showSearch()"><i class="icon-plus-sign"> </i> Subjects</a></div>
                                     <p>
-                                    <span class="label label-default">Mathmatics&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
-                                    <span class="label label-default">Science&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
+                                    
                                     </p>
                                 </div>
                                 <div class="filter-group">
                                     <div class="filter-title"><a href="#"><i class="icon-plus-sign"></i> Rubric Components</a></div>
                                     <p>
-                                    <span class="label label-default">I-A-4&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
+                                    <span id="test" class="label label-default">I-A-4&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
                                         <span class="label label-default">I-B-2&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
                                     </p>
                                 </div>
@@ -552,8 +567,9 @@
 
 	
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="bootstrap/js/bootstrap-typeahead.js"></script>
     <script src="bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="js/select2.js"></script>
+
     
   </body>
 </html>

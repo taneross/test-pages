@@ -31,7 +31,6 @@
         }
 		function hideSearch() {
             document.getElementById('subject-search').style.display = "none";
-			window.open("mediapool2.html","_self")
         }
 		function showSearch() {
             document.getElementById('subject-search').style.display = "block";
@@ -47,10 +46,6 @@
 			});
 	  </script>
       
-      <style>
-	  	#math { display:none; }
-		#art { display:none; }
-	  </style>
   </head>
 
   <body>
@@ -219,22 +214,11 @@
 	                                      </p>
 	                                  </div>
 	                                  <div class="filter-group">
-	                                      <div class="filter-title"><a href="mediapool2.html"><i class="icon-minus-sign-alt"> </i> Subjects</a></div>
-	                                          <ul class="filter-list">
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  Art</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  Career</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  English</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  History</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  Mathmatics</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  Music</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  Reading/Literacy</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  Science</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  Social Sciences</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  Tech Ed</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  Band</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  Chior</li>
-	                                              <li><input type="checkbox" style="margin-top:-4px; margin-right:10px">  PE</li>
-	                                          </ul>
+	                                      <div class="filter-title"><a href="mediapool.html"><i class="icon-plus-sign-alt"> </i> Subjects</a></div>
+	                                      <p>
+	                                      <span class="label label-default">Art&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
+	                                          <span class="label label-default">Mathmatics&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
+	                                      </p>  
 	                                  </div>
 	                                  <div class="filter-group">
 	                                      <div class="filter-title"><a href="#"><i class="icon-plus-sign-alt"></i></a> Rubric Components</div>
@@ -261,9 +245,7 @@
 	                          <p style="padding:0 20px 20px 20px">Media filters are used to search the Media Library to find matching videos and artificats for this Template. Choose all that apply.</p>
 	                              </div>
 	                          </div>   
-
-                        
-                        
+                       
  <!-- Content Panel -->                            
                     <div class="span8 offset1 panel">
                         <div class="row-fluid" style="border-bottom: 1px dotted #444">
@@ -317,54 +299,8 @@
                         
 <!--  START VIDEO LIST ---->
                         
-                        <div class="row-fluid mar-none"><!-- video row -->
-                                    <div class="span12">
-                                        <div class="row-fluid video-row">
-                                            <div class="span3">
-                                                <a href="#" class="thumbnail" id="thumb1" onclick="showVideo();">
-                                                    <div class="overlay"><i class="icon-play-circle" style="font-size:400%; color:#ff"></i></div>
-                                                    <img src="images/th_01.png" alt="...">
-                                                </a>
-                                            </div>
-                                            <div class="span8">
-                                                <h3><a href="#" onclick="showVideo();">[ Video Title Goes Here ]</a></h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magullamco laboris nisi ut ...</p>
-                                                <p>Video ID: 123 <i class="icon-circle dot"></i>
-                                                TRT:  3:43 <i class="icon-circle dot"></i>
-                                                Usage: 3 Templates
-                                                </p>
-                                            </div>
-                                            <div class="span1 align-right">
-                                                <div class="included"><i class="icon-ok"></i></div>
-                                                <div class="include-action" style="margin-top:20px"><button class="btn btn-default btn-small"><i class="icon-ban-circle"></i></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                        <div class="row-fluid mar-none"><!-- video row -->
-                                    <div class="span12">
-                                        <div class="row-fluid video-row">
-                                            <div class="span3">
-                                                <a href="#" class="thumbnail">
-                                                    <div class="overlay"><i class="icon-play-circle" style="font-size:400%; color:#ff"></i></div>
-                                                    <img src="images/th_02.png" alt="...">
-                                                </a>
-                                            </div>
-                                            <div class="span8">
-                                                <h3><a href="#">[ Video Title Goes Here ]</a></h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magullamco laboris nisi ut ...</p>
-                                                <p>Video ID: 123 <i class="icon-circle dot"></i>
-                                                TRT:  3:43 <i class="icon-circle dot"></i>
-                                                Usage: 0 Templates
-                                                </p>
-                                            </div>
-                                            <div class="span1 align-right">
-                                                <div class="included"><i class="icon-ok"></i></div>
-                                                <div class="include-action" style="margin-top:20px"><button class="btn btn-default btn-small"><i class="icon-ban-circle"></i></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                       
+  
                         <div class="row-fluid mar-none"><!-- video row -->
                                     <div class="span12">
                                         <div class="row-fluid video-row" style="background:#eae8e5">
@@ -533,7 +469,55 @@
                                         </div>
                                     </div>
                                 </div>
-                        <div class="row-fluid mar-none"><!-- video row -->
+		                        <div class="row-fluid mar-none"><!-- video row -->
+		                                    <div class="span12">
+		                                        <div class="row-fluid video-row">
+		                                            <div class="span3">
+		                                                <a href="#" class="thumbnail" id="thumb1" onclick="showVideo();">
+		                                                    <div class="overlay"><i class="icon-play-circle" style="font-size:400%; color:#ff"></i></div>
+		                                                    <img src="images/th_01.png" alt="...">
+		                                                </a>
+		                                            </div>
+		                                            <div class="span8">
+		                                                <h3><a href="#" onclick="showVideo();">[ Video Title Goes Here ]</a></h3>
+		                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magullamco laboris nisi ut ...</p>
+		                                                <p>Video ID: 123 <i class="icon-circle dot"></i>
+		                                                TRT:  3:43 <i class="icon-circle dot"></i>
+		                                                Usage: 3 Templates
+		                                                </p>
+		                                            </div>
+		                                            <div class="span1 align-right">
+		                                                <div class="included"><i class="icon-ok"></i></div>
+		                                                <div class="include-action" style="margin-top:20px"><button class="btn btn-default btn-small"><i class="icon-ban-circle"></i></button></div>
+		                                            </div>
+		                                        </div>
+		                                    </div>
+		                                </div>
+				    <div class="row-fluid mar-none"><!-- video row -->
+				                                    <div class="span12">
+				                                        <div class="row-fluid video-row">
+				                                            <div class="span3">
+				                                                <a href="#" class="thumbnail">
+				                                                    <div class="overlay"><i class="icon-play-circle" style="font-size:400%; color:#ff"></i></div>
+				                                                    <img src="images/th_02.png" alt="...">
+				                                                </a>
+				                                            </div>
+				                                            <div class="span8">
+				                                                <h3><a href="#">[ Video Title Goes Here ]</a></h3>
+				                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magullamco laboris nisi ut ...</p>
+				                                                <p>Video ID: 123 <i class="icon-circle dot"></i>
+				                                                TRT:  3:43 <i class="icon-circle dot"></i>
+				                                                Usage: 0 Templates
+				                                                </p>
+				                                            </div>
+				                                            <div class="span1 align-right">
+				                                                <div class="included"><i class="icon-ok"></i></div>
+				                                                <div class="include-action" style="margin-top:20px"><button class="btn btn-default btn-small"><i class="icon-ban-circle"></i></button></div>
+				                                            </div>
+				                                        </div>
+				                                    </div>
+				                                </div>
+                       <div class="row-fluid mar-none"><!-- video row -->
                                     <div class="span12">
                                         <div class="row-fluid video-row">
                                             <div class="span3">
