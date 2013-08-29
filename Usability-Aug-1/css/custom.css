@@ -370,11 +370,14 @@ td {
 .meta-row {
     margin-top: 20px;
     padding: 0 0;
+	padding-left:13px;
     border-top: 1px dotted #444;
     border-bottom: 1px dotted #444;
     display:block;
 	margin-bottom:50px;
+	
 }
+
 .meta-bullets {
 	margin-left:-10px;
 }
@@ -409,6 +412,21 @@ td {
 }
 
 
+/*
+.tabbed {
+    padding:15px;
+    border:1px solid #ccc;
+    border-top-right-radius: 10px;
+     border-top-left-radius: 10px;
+    background:#EDEDED;
+}
+.tabbed.active {
+    background:#fff;
+    padding-top: 18px;
+    color: #444;
+    border-bottom:0;
+}
+*/
 
 .tabbed {
     margin-left:30px;
