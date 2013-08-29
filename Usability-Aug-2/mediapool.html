@@ -18,24 +18,18 @@
 
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
-      
+      <script src="js/jquery.js"></script>
       <script>
         function showVideo() {
             document.getElementById('video-preview').style.display = "block";
             console.log("show video preveiew");
         }
-		
-		function ShowList() {
-            document.getElementById('search-dropdown').style.display = "block";
-            console.log("show video preveiew");
-        }
-		
+	
 		
 		
       </script>
@@ -102,18 +96,12 @@
           	<div class="subject-search">
                  <div class="form-group">
                             <label for="">Search Filters:  Subject</label>
-                            <input id="searchahead" type="text" data-provide="typeahead" placeholder="Start typing for list" style="height:30px; width:95%" autocomplete="off"
-                            >
-                            <script>
-                            	$("searchahead").typeahead({ source: "['Any','Art','Career','English','Language other than English','Mathematics','Music','Reading & Language Arts','Science','Social Sciences','Tech Ed','Band','Choir','PE','PLTW']"
-                           });
+                           <script>
+                            	var src= "['Any','Art','Career','English','Language other than English','Mathematics','Music','Reading & Language Arts','Science','Social Sciences','Tech Ed','Band','Choir','PE','PLTW']"
+                           ;
 								
 								</script>
-                            <div class="bs-docs-example well">
-<label for="state">State: </label>
-<input class="typeahead" type="text" 
-data-source="["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]" 
-data-items="4" data-provide="typeahead" data-dojo-dataid="pid7">
+                            <input type="text" class="span3" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Ahmedabad&quot;,&quot;Akola&quot;,&quot;Asansol&quot;,&quot;Aurangabad&quot;,&quot;Bangaluru&quot;,&quot;Baroda&quot;,&quot;Belgaon&quot;,&quot;Berhumpur&quot;,&quot;Calicut&quot;,&quot;Chennai&quot;,&quot;Chapra&quot;,&quot;Cherapunji&quot;]">
 </div>
                   </div>
                <span class="label label-default">Mathmatics&nbsp;&nbsp;<i class="icon-remove-sign"></i></span>
@@ -562,9 +550,10 @@ data-items="4" data-provide="typeahead" data-dojo-dataid="pid7">
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 
-	<script src="bootstrap/js/jquery.js"></script>
+	
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="bootstrap/js/bootstrap-typeahead.js"></script>
     <script src="bootstrap/js/bootstrap-dropdown.js"></script>
+    
   </body>
 </html>
