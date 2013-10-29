@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bootstrap &middot; Teachscape Bootstrap Theme</title>
+    
+	
+	 <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet">
+  
+	
+	
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Documentation extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet">
+	
+    
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+      <script src="../assets/js/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+
+
+   
+    
+    <!-- END: Place anything custom before this. -->
+    
+  </head>
+
+  <body>
+
+      <!-- Static navbar -->
+      <div class="ts-navbar"><img src="images/mainNav.png" width="1565px" height="38px"></div>
+	  <div class="content-fluid">
+		  <ol class="breadcrumb">
+		    <li><a href="#">Manage Rubrics</a></li>
+		    <li>Create Rubric: Edit Content</li>
+		  </ol>
+	  </div>
+    
+      <div class="admin-wrap">
+		 
+		
+
+    <!-- Main content area -->	
+       
+        <div class="content-fluid bread-none">
+            <div class="row top-row">
+                <div class="col-md-8"><h4>Edit Rubric Content</h4><h1><input class="input-invisible" placeholder="Enter Rubric Title" style="width:100%"></input></h1></div>
+                <div class="col-md-4 action-wrap"></div>
+            </div>
+      <!-- call to action bar -->
+            <div class="row">
+                <div class="col-md-12 col-lg-12 call-bar-top">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 call-bar-center">
+							<div class="btn-group">
+							  <a type="button" class="btn btn-default " href="outline7b.html">Outline</button>
+							  <a type="button" class="btn btn-default active" href="edit3b.html">Edit</a>
+							  <a type="button" class="btn btn-default" href="preview1.html">Preview</a>
+							</div>
+						</div>
+						<div class="col-md-3 call-bar-right">
+							<a href="#" class="btn btn-default btn-sm">Save</a>
+							<a href="index.html" class="btn btn-primary btn-md">Done</a>
+						</div>
+					</div>
+				  
+                </div>
+            </div><!-- row !-->
+       
+	   	 	<div class="row content-area">
+				<div class="col-md-10 col-md-offset-1"> <!-- main content area centered -->
+					
+					<h4>Rubric Description</h4>
+					<textarea rows="10" cols="100" placeholder="Enter Description" class="fluid"></textarea>
+					
+					
+		  			<div class="accord-panel panel-default bar-1 pull-right edit-bar"><!-- first parent -->
+		  			      <div class="panel-heading borderless">
+		  			        <h4 class="panel-title">
+		  			          <a class="accordion-toggle btn" data-toggle="collapse" data-parent="#accordion" href="#1parent">
+		  			            
+								 <span class="icon-caret-down primary arrow"></span>
+								 <input class="input-invisible" placeholder="1" style="width:5%"></input>
+								 <input class="input-invisible" style="width:80%" placeholder="Enter Section Title"></input>
+								</a>
+								<span class="btn icon-star btn-spaced red pull-right"> </span>
+							 </h4>
+		  			      </div>
+						  
+						  
+		  			    <div id="1parent" class="panel-collapse collapse in">
+							<div class="row">
+								<div class="col-md-10 pull-right">
+		  			       			 <textarea rows="5" cols="50" placeholder="Enter Section Description" class="fluid"></textarea>
+								</div>
+								<div class="row bar-2 pull-right">
+									<!-- scoring widgets -->
+									<ul class="row row-scoring">
+									
+										<!-- widget1 -->
+										<li class="col-md-3 gut-10 edit-columns">
+											<div class="">
+												<div>
+													<h5 class="red">Unsatisfactory</h5>
+												</div>
+												<div class="label-score">
+													<h6 class="red">Level 1</h6>
+												</div>
+												<div class="label-score">
+													<h6 class="red">0</h6>
+												</div>
+												<textarea rows="10" cols="50" placeholder="Level Description" class="fluid smaller"></textarea>
+											</div>
+											
+										</li>
+									
+										<!-- widget1 -->
+										<li class="col-md-3 gut-10 edit-columns">
+											<div class="">
+												<div>
+													<h5 class="red">Needs Improvement</h5>
+												</div>
+												<div class="label-score">
+													<h6 class="red">Level 2</h6>
+												</div>
+												<div class="label-score">
+													<h6 class="red">1</h6>
+												</div> 
+												<textarea rows="10" cols="50" placeholder="Level Description" class="fluid smaller"></textarea>
+											</div>
+											
+										</li>
+												
+									
+										<!-- widget1 -->
+										<li class="col-md-3 gut-10 edit-columns">
+											<div class="">
+												<div>
+													<h5 class="red">Proficient</h5>
+												</div>
+												<div class="label-score">
+													<h6 class="red">Level 3</h6>
+												</div>
+												<div class="label-score">
+													<h6 class="red">2</h6>
+												</div>
+												<textarea rows="10" cols="50" placeholder="Level Description" class="fluid smaller"></textarea>
+											</div>
+											
+										</li>
+									
+									
+										<!-- widget1 -->
+										<li class="col-md-3 gut-10 edit-columns">
+											<div class="">
+												<div>
+													<h5 class="red">Exemplary</h5>
+												</div>
+												<div class="label-score">
+													<h6 class="red">Level 4</h6>
+												</div>
+												<div class="label-score">
+													<h6 class="red">3</h6>
+												</div>
+												<textarea rows="10" cols="50" placeholder="Level Description" class="fluid smaller"></textarea>
+											</div>
+										</li>
+									
+									
+									</ul><!-- /scoring widget -->
+								
+									<div class="fluid mar-top-20">
+										<h4>Critical Attributes</h4>
+										<input class="input-invisible red" style="width:60%" placeholder="Critical Attributes Group (optional)"></input>
+									</div>
+									<ul class="row row-scoring"><!-- critical attributes columns -->
+										<!-- widget1 -->
+										<li class="col-md-3 gut-10 edit-columns">
+											<textarea rows="20" cols="30" placeholder="Critical Attributes" class="fluid smaller"></textarea>
+										</li>
+										<!-- widget1 -->
+										<li class="col-md-3 gut-10 edit-columns">
+											<textarea rows="20" cols="30" placeholder="Critical Attributes" class="fluid smaller"></textarea>
+										</li>
+										<!-- widget1 -->
+										<li class="col-md-3 gut-10 edit-columns">
+											<textarea rows="20" cols="30" placeholder="Critical Attributes" class="fluid smaller"></textarea>
+										</li>
+										<!-- widget1 -->
+										<li class="col-md-3 gut-10 edit-columns">
+											<textarea rows="20" cols="30" placeholder="Critical Attributes" class="fluid smaller"></textarea>
+										</li>
+									
+									
+									</ul><!-- /crit at-->
+								
+									<div class="col-md-4 col-md-offset-4">
+										<a href="#" class="btn btn-default btn-xs btn-block">Add Another Group of Attributes</a>
+									</div>
+								
+								</div>
+								
+							</div>
+						</div>
+					</div><!-- / first parent -->
+					
+					
+					
+		  			<div class="accord-panel panel-default bar-1 pull-right edit-bar"><!-- 2 parent -->
+		  			      <div class="panel-heading borderless">
+		  			        <h4 class="panel-title">
+		  			          <a class="accordion-toggle btn" data-toggle="collapse" data-parent="#accordion" href="#2parent">
+		  			            
+								 <span class="icon-caret-right primary arrow"></span>
+								 <input class="input-invisible" placeholder="2" style="width:5%"></input>
+								 <input class="input-invisible" style="width:80%" placeholder="Enter Section Title"></input>
+								</a>
+								<span class="btn icon-star btn-spaced red pull-right"> </span>
+							 </h4>
+		  			      </div>
+						  
+						  
+		  			    <div id="2parent" class="panel-collapse collapse ">
+							<div class="row">
+								<div class="col-md-10 pull-right">
+		  			       			 <textarea rows="5" cols="50" placeholder="Enter Section Description" class="fluid"></textarea>
+								</div>
+								<div class="row bar-2 pull-right">
+									<!-- scoring widgets -->
+									<ul class="row row-scoring">
+									
+										<!-- widget1 -->
+										<li class="col-md-3 gut-10 edit-columns">
+											<div class="">
+												<div>
+													<h5 class="red">Unsatisfactory</h5>
+												</div>
+												<div class="label-score">
+													<h6 class="red">Level 1</h6>
+												</div>
+												<div class="label-score">
+													<h6 class="red">0</h6>
+												</div>
+												<textarea rows="10" cols="50" placeholder="Level Description" class="fluid smaller"></textarea>
+											</div>
+											
+										</li>
+									
+										<!-- widget1 -->
+										<li class="col-md-3 gut-10 edit-columns">
+											<div class="">
+												<div>
+													<h5 class="red">Needs Improvement</h5>
+												</div>
+												<div class="label-score">
+													<h6 class="red">Level 2</h6>
+												</div>
+												<div class="label-score">
+													<h6 class="red">1</h6>
+												</div> 
+												<textarea rows="10" cols="50" placeholder="Level Description" class="fluid smaller"></textarea>
+											</div>
+											
+										</li>
+												
+									
+										<!-- widget1 -->
+										<li class="col-md-3 gut-10 edit-columns">
+											<div class="">
+												<div>
+													<h5 class="red">Proficient</h5>
+												</div>
+												<div class="label-score">
+													<h6 class="red">Level 3</h6>
+												</div>
+												<div class="label-score">
+													<h6 class="red">2</h6>
+												</div>
+												<textarea rows="10" cols="50" placeholder="Level Description" class="fluid smaller"></textarea>
+											</div>
+											
+										</li>
+									
+									
+										<!-- widget1 -->
+										<li class="col-md-3 gut-10 edit-columns">
+											<div class="">
+												<div>
+													<h5 class="red">Exemplary</h5>
+												</div>
+												<div class="label-score">
+													<h6 class="red">Level 4</h6>
+												</div>
+												<div class="label-score">
+													<h6 class="red">3</h6>
+												</div>
+												<textarea rows="10" cols="50" placeholder="Level Description" class="fluid smaller"></textarea>
+											</div>
+										</li>
+									
+									
+									</ul><!-- /scoring widget -->
+								
+									<div class="fluid mar-top-20">
+										<h4>Critical Attributes</h4>
+										<input class="input-invisible red" style="width:60%" placeholder="Critical Attributes Group (optional)"></input>
+									</div>
+									<ul class="row row-scoring"><!-- critical attributes columns -->
+										<!-- widget1 -->
+										<li class="col-md-3 gut-10 edit-columns">
+											<textarea rows="20" cols="30" placeholder="Critical Attributes" class="fluid smaller"></textarea>
+										</li>
+										<!-- widget1 -->
+										<li class="col-md-3 gut-10 edit-columns">
+											<textarea rows="20" cols="30" placeholder="Critical Attributes" class="fluid smaller"></textarea>
+										</li>
+										<!-- widget1 -->
+										<li class="col-md-3 gut-10 edit-columns">
+											<textarea rows="20" cols="30" placeholder="Critical Attributes" class="fluid smaller"></textarea>
+										</li>
+										<!-- widget1 -->
+										<li class="col-md-3 gut-10 edit-columns">
+											<textarea rows="20" cols="30" placeholder="Critical Attributes" class="fluid smaller"></textarea>
+										</li>
+									
+									
+									</ul><!-- /crit at-->
+								
+									<div class="col-md-4 col-md-offset-4">
+										<a href="#" class="btn btn-default btn-xs btn-block">Add Another Group of Attributes</a>
+									</div>
+								
+								</div>
+								
+							</div>
+						</div>
+					</div><!-- / 2 parent -->
+					
+		  			
+					
+				</div>
+	   
+	    	</div> <!-- content -->
+    </div> <!-- admin-wrap -->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+	 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+	  <script>
+	  //Make things sortable - jquiry UI
+			  $(function() {
+			    $( "#sortable-mater" ).sortable();
+			    $( "#sortable-master" ).disableSelection();
+			    $( "#sortable-outline" ).sortable();
+			    $( "#sortable-outline" ).disableSelection();
+			  });
+	  </script>
+	  
+	  <script>
+			  $(function() {
+				 
+				 
+			 });
+			  
+			 
+	  
+	  </script>
+	 
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

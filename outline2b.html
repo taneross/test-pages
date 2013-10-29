@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bootstrap &middot; Teachscape Bootstrap Theme</title>
+    
+	
+	 <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet">
+  
+	
+	
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Documentation extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet">
+	
+    
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+      <script src="../assets/js/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+
+
+    <script src="assets/js/jquery-1.10.2.js"></script>
+	 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+
+	 <SCRIPT type="text/javascript" SRC="assets/js/prototype.js">
+	 </SCRIPT>
+	 
+	 <script>
+	 $(function(){
+	    initOutline();
+	 });
+					 </script>
+    <!-- END: Place anything custom before this. -->
+    
+  </head>
+
+  <body>
+
+      <!-- Static navbar -->
+      <div class="ts-navbar"><img src="images/mainNav.png" width="1565px" height="38px"></div>
+	  <div class="content-fluid">
+		  <ol class="breadcrumb">
+		     <li><a href="index.html">Manage Rubrics</a></li>
+		    <li>Create Rubric: Outline</li>
+		  </ol>
+	  </div>
+    
+      <div class="admin-wrap">
+		 
+		
+
+    <!-- Main content area -->	
+       
+        <div class="content-fluid bread-none">
+            <div class="row top-row">
+                <div class="col-md-8"><h4>Outline Rubric</h4><h1><input class="input-invisible" placeholder="Untitled Rubric"></input></h1></div>
+                <div class="col-md-4 action-wrap"></div>
+            </div>
+      <!-- call to action bar -->
+            <div class="row">
+                <div class="col-md-12 col-lg-12 call-bar-top">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 call-bar-center">
+							<div class="btn-group">
+							  <button type="button" class="btn btn-default active">Outline</button>
+							  <a type="button" class="btn btn-default" href="edit1.html">Edit</a>
+							  <a type="button" class="btn btn-default" href="preview1.html">Preview</a>
+							</div>
+						</div>
+						<div class="col-md-3 call-bar-right">
+							<a href="#" class="btn btn-default btn-sm">Save</a>
+							<a href="index.html" class="btn btn-primary btn-md">Done</a>
+						</div>
+					</div>
+				  
+                </div>
+            </div><!-- row !-->
+       
+	   	 	<div class="row content-area">
+				
+			<!-- Structural Master -->	
+			  <div class="accord-panel panel-default">
+			      <div class="panel-heading borderless">
+			        <h4 class="panel-title">
+			          <a class="accordion-toggle " data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+			            <span class="icon-caret-down"></span>  Master Section Structure
+			          </a>
+			        </h4>
+			      </div>
+			      <div id="struct-master" class="panel-collapse collapse in">
+			        <div class="panel panel-body">
+						<div class="col-md-9">
+							<ul id="sortable-master" class="sortable-list">
+								
+								  	<li  id="rung1" class="ui-state-default bar-section bar-1">
+									  	<div class="row">
+										  	<div class="col-md-7">
+										 	 	<span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+										 	 	<input class="input-invisible" placeholder="1" style="width:10%"></input>
+										 		 <input class="input-invisible" style="width:40%" placeholder="Parent"></input>
+										 	</div>
+										 	<div class="col-md-5">
+										  		<div class="bar-actions">
+											 	   <div class="disp-inline"><small>Scoring</small><a class="btn icon-star-empty"> </a></div>
+											 	  
+										  		</div>
+											</div>
+										</div>
+								  	</li>
+									<li id="rung2"  class="ui-state-default bar-section bar-2">
+									  	<div class="row">
+										  	<div class="col-md-7">
+										 	 	<span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+										 	 	<input class="input-invisible" placeholder="A" style="width:10%"></input>
+										 		<input class="input-invisible" style="width:40%" placeholder="Sub Section 1"></input>
+										 	</div>
+										 	<div class="col-md-5">
+										  		<div class="bar-actions">
+											  	  	<div class="disp-inline"><small>Scoring</small><a class="btn icon-star-empty" href="outline3.html"> </a></div>
+											  		<div class="divider"></div>
+											  	  	 <a class="btn icon-trash"  href="outline1.html"></a>
+										  		</div>
+											</div>
+										</div>
+									</li>
+									<li id="rung3"  class="ui-state-default bar-suggested bar-3"><a id="add3" class="bar-sug btn btn-default btn-xs" href="#">Add Sub Section 2</a></li>
+									<li id="rung4"  class="ui-state-default bar-suggested bar-4"><a id="add4" class="bar-sug btn btn-default btn-xs" href="#">Add Sub Section 3</a></li>
+									<li id="rung5" class="ui-state-default bar-suggested bar-5"><a id="add5" class="bar-sug btn btn-default btn-xs" href="outline6.html">Add Sub Section 4</a></li>
+									
+							  	
+							</ul>
+						</div>
+					
+						<div class="col-md-3 smaller"><!-- instructions -->
+							<h4>Section Structure</h4>
+							<p>Use the boxes at left to set up the structure for your rubric.  It is possible to have up to 5 levels of hierarchy.  </p>
+<p>The observable parts of your rubric will be used while doing classroom observations.  You must select  <span class="icon-star-empty"></span> one level in the hierarchy to activate the scoring features.   The scoring values defined at left will be used to calculate the scores for calibrations and for organizing the master scores for media.  </p>
+								<p><b style="color:#999">Grey Text</b> is editable</p>
+							
+						</div>
+					</div>
+				</div>
+			</div><!-- / strucutral master -->
+			
+			<!-- rubric outline -->
+			<div id="rubric-outline">
+				<h3>Rubric Outline</h3>
+				<div class="row outline">
+					<div class="col-md-9">
+						
+						<ul id="sortable-outline" class="sortable-list">
+						  <li  id="rung1" class="ui-state-default bar-section bar-1">
+							  <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+							  <input class="input-invisible" placeholder="1" style="width:50px"></input>
+							  <input class="input-invisible" style="width:500px" placeholder="Section"></input>
+							  <div class="bar-actions">
+								  <div class="disp-inline"></div>
+								  <div class="divider"></div>
+								  <a class="btn icon-pencil" href="edit2.html"></a>  <a class="btn icon-trash"></a>
+							  </div>
+						  </li>
+  						<li id="" class="ui-state-default bar-section bar-2">
+  						  <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+  						  <input class="input-invisible" placeholder="A" style="width:50px"></input>
+  						  <input class="input-invisible" style="width:500px" placeholder="Sub Section 1"></input>
+  						  <div class="bar-actions">
+  							  <div class="disp-inline"></div>
+  							  <div class="divider"></div>
+  							  <a class="btn icon-pencil" href="edit2.html"></a>  <a class="btn icon-trash" href="outline3.html"></a>
+  						  </div>
+  						</li>
+						<li id="" class="ui-state-default bar-suggested bar-2"><a id="" class="bar-sug btn btn-default btn-xs">Add Sub Section 1</a></li>
+						<li id="" class="ui-state-default bar-suggested bar-1"><a id="" class="bar-sug btn btn-default btn-xs">Add Section</a></li>
+						</ul>
+						
+						
+					</div>
+					
+					<div class="col-md-3 smaller"><!-- instructions -->
+						<h4>Rubric Outline</h4>
+							<p>Add the levels of the heirarchy that are required for each section for your rubric.</p>
+							<p>You can drag the bars to reorder sections and any content entered during Edit Mode will also be reordered.</p>
+							<p>If you delete a bar/section <span class="icon-trash"></span> then any content entered during Edit Mode will also be deleted.  You will see a prompt before anything is removed.</p>
+					</div>
+					
+					
+				</div>
+			</div><!-- /rubric outline -->
+	   
+	    </div> <!-- content -->
+    </div> <!-- admin-wrap -->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

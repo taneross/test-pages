@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bootstrap &middot; Teachscape Bootstrap Theme</title>
+    
+	
+	 <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet">
+  
+	
+	
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Documentation extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet">
+	
+    
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+      <script src="../assets/js/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+
+
+   
+    
+    <!-- END: Place anything custom before this. -->
+    
+  </head>
+
+  <body>
+
+      <!-- Static navbar -->
+      <div class="ts-navbar"><img src="images/mainNav.png" width="1565px" height="38px"></div>
+	  <div class="content-fluid">
+		  <ol class="breadcrumb">
+		     <li><a href="index.html">Manage Rubrics</a></li>
+		    <li>Boston Observable Rubric</li>
+		  </ol>
+	  </div>
+    
+      <div class="admin-wrap">
+		 
+		
+
+    <!-- Main content area -->	
+       
+        <div class="content-fluid bread-none">
+            <div class="row top-row">
+                <div class="col-md-8"><h4>Preview Rubric</h4><h1>Boston Observable Rubric</h1></div>
+				<div class="col-md-2 mar-top-20">
+					<h5>Status: <span class="label label-default">Draft</span></h5>
+					<h5>Date Modified: <span class="grey">M/D/YY</span></h5>
+				</div>	
+                <div class="col-md-2 mar-top-20">
+					<!-- Single button -->
+					<div class="btn-group">
+					  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					    Action <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" role="menu">
+					    <li><a href="#">Publish Rubric</a></li>
+					    <li><a href="#">Archive Rubric</a></li>
+					    <li class="divider"></li>
+					    <li><a href="#">Delete Rubric</a></li>
+					  </ul>
+					</div>
+					
+                </div>
+            </div>
+      <!-- call to action bar -->
+            <div class="row">
+                <div class="col-md-12 col-lg-12 call-bar-top">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 call-bar-center">
+							<div class="btn-group">
+							  <a type="button" class="btn btn-default " href="outline5.html">Outline</button>
+							  <a type="button" class="btn btn-default " href="edit3b.html">Edit</a>
+							  <a type="button" class="btn btn-default active" href="preview1.html">Preview</a>
+							</div>
+						</div>
+						<div class="col-md-3 call-bar-right">
+							<a href="#" class="btn btn-default btn-sm">Save</a>
+							<a href="index.html" class="btn btn-primary btn-md">Done</a>
+						</div>
+					</div>
+				  
+                </div>
+            </div><!-- row !-->
+       
+	   	 	<div class="row content-area">
+				<div class="col-md-10 col-md-offset-1  panel squared"> <!-- main content area centered -->
+					
+					<h4>Rubric Description</h4>
+					<p>This rubic contains only the observable elements.</p>
+					
+					<div class="accord-panel panel-default bar-1 pull-right edit-bar"><!--1 child -->
+		  			      <div class="panel-heading borderless">
+		  			       
+								<div class="col-md-9">
+				  			          <a class="accordion-toggle fluid" data-toggle="collapse" data-parent="#accordion" href="#child1">
+								  	
+												 <span class="icon-caret-down primary arrow"></span>
+												 <h4 class="disp-inline"><span class="grey">I-A-1.</span>   Subject Matter Knowledge</h4>
+									</a>
+								</div>	
+								<div class="col-md-3 align-right">
+									  	<span class="btn icon-star btn-spaced red"> </span>
+								</div>	
+								
+		  			      </div>
+						  
+						  
+		  			    <div id="child1" class="panel-collapse collapse in">
+							
+							<div class="col-md-11 pull-right">
+	  			       			<p>
+								<ul>
+									<li>Knowledge of the subject matter: Understanding and application of the content and structure of the discipline, prioritizing key ideas and skills and including prerequisite relationships and connections to other disciplines.</li> 
+									<li>Knowledge of the pedagogy: Understanding and application of the pedagogies proven to be effective in teaching the given subject and grade-level.</li> 
+									<li>Knowledge of the Massachusetts Curriculum Frameworks: Understanding and application of the content and pedagogy of the MACF as they relate to the given subject and grade-level.</li> 
+									<li>Learning experiences: Tasks assigned to students to develop understanding of relevant content and skills.  </li> 
+
+								</ul>
+								</p>
+							</div>
+							<div class="col-md-11 pull-right">
+								<!-- scoring widgets -->
+								<ul class="row row-scoring">
+									
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns">
+										<div class="">
+											<div>
+												<input class="input-invisible red" style="width:60%" value="Unsatisfactory"></input><a class="btn icon-trash"></a>
+											</div>
+											<div class="label-score">
+												<input class="input-invisible" style="width:100%" value="Level 1"></input>
+											</div>
+											<div class="label-score">
+												<input class="input-invisible" style="width:100%" value="0"></input>
+											</div>
+											<p class="mar-top-20 smaller">Demonstrates limited knowledge of the subject matter and/or its pedagogy; relies heavily on textbooks or resources for development of the factual content. Rarely engages students in learning experiences focused on complex knowledge or skills in the subject.</p>
+										</div>
+									</li>
+									
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns">
+										<div class="">
+											<div>
+												<input class="input-invisible red" style="width:60%" value="Basic"></input><a class="btn icon-trash"></a>
+											</div>
+											<div class="label-score">
+												<input class="input-invisible" style="width:100%" value="Level 2"></input>
+											</div>
+											<div class="label-score">
+												<input class="input-invisible" style="width:100%" value="1"></input>
+											</div>
+											<p class="mar-top-20 smaller">Demonstrates factual knowledge of subject matter and the pedagogy it requires by sometimes engaging students in learning experiences around complex knowledge and skills in the subject.
+											</p>
+										</div>
+									</li>
+									
+									
+									
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns">
+										<div class="">
+											<div>
+												<input class="input-invisible red" style="width:60%" value="Proficient"></input><a class="btn icon-trash"></a>
+											</div>
+											<div class="label-score">
+												<input class="input-invisible" style="width:100%" value="Level 3"></input>
+											</div>
+											<div class="label-score">
+												<input class="input-invisible" style="width:100%" value="2"></input>
+											</div>
+											<p class="mar-top-20 smaller">Demonstrates sound knowledge and understanding of the subject matter and the pedagogy it requires by consistently engaging students in learning experiences that enable them to acquire complex knowledge and skills in the subject.
+											</p>
+										</div>
+									</li>
+									
+									
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns">
+										<div class="">
+											<div>
+												<input class="input-invisible red" style="width:60%" value="Exemplary"></input><a class="btn icon-trash"></a>
+											</div>
+											<div class="label-score">
+												<input class="input-invisible" style="width:100%" value="Level 4"></input>
+											</div>
+											<div class="label-score">
+												<input class="input-invisible" style="width:100%" value="3"></input>
+											</div>
+											<p class="mar-top-20 smaller">Demonstrates expertise in subject matter and the pedagogy it requires by engaging all students in learning experiences that enable them to synthesize complex knowledge and skills in the subject. Is able to model this element.
+											</p>
+										</div>
+									</li>
+									
+									
+								</ul><!-- /scoring widget -->
+								<div class="fluid mar-top-20">
+									<h4>Critical Attributes</h4>
+									<h5>Teachers</h5>
+								</div>
+								<ul class="row row-scoring preview"><!-- critical attributes columns -->
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns ">
+										<ul>
+											<li>Teacher does not consider prerequisite relationships when planning.</li>
+											<li>Teacher conveys inaccurate content to students, or does not communicate the key ideas and skills necessary for mastery of unit and lesson objectives.</li>
+											<li>Teacher provides incomplete or perfunctory answers to student questions. </li>
+											<li>Teacher uses instructional strategies that are inconsistent with current subject area and grade-level best practices. </li>
+											<li>5Teacher rarely engages students in learning experiences focused on complex knowledge or skills, and instead relies on rote or basic activities. </li>
+
+										</ul>
+									</li>
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns">
+										<ul>
+											<li>Teacher demonstrates only a basic understanding of the discipline, or incomplete knowledge of prerequisite relationships.</li>
+<li>Teacher conveys accurate information to students but delivery is not consistently organized in a way that effectively facilitates learning or emphasizes key ideas and skills.</li>
+<li>Teacher answers students’ questions accurately, but does not provide feedback that furthers their learning.</li>
+<li>4Teacher uses instructional strategies that are rarely consistent with current subject area and grade-level best practices. </li>
+<li>Teacher sometimes engages students in learning experiences around complex knowledge and skills.</li>
+
+										</ul>
+										
+									</li>
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns">
+										<ul>
+											<li>Teacher identifies important concepts of the discipline and their relationships to one another.</li>
+<li>Teacher conveys accurate content to students, providing clear explanations that effectively guide student thinking without doing the work for the students.</li>
+<li>Teacher answers students’ questions accurately and provides feedback that extends their thinking.</li>
+<li>Teacher uses instructional strategies that are consistent with current subject area and grade-level best practices. </li>
+<li>Teacher creates learning experiences that allow for multiple perspectives and correct responses and enable students to acquire complex knowledge and skills.</li>
+<li>Teacher emphasizes key ideas and skills necessary to master lesson objectives.</li>
+
+										</ul>
+										
+									</li>
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns">
+										<ul>
+											<li>Teacher illustrates and consistently emphasizes content relationships within and between disciplines.</li>
+<li>Teacher conveys accurate content to students, providing clear explanations that extend student thinking. </li>
+<li>Teacher guides students to answer each other’s questions accurately and to provide each other with useful feedback. </li>
+<li>Teacher uses instructional strategies that are consistent with current subject area and grade-level best practices and integrates innovative materials to support student learning. </li>
+<li>Teacher creates learning experiences that allow for multiple perspectives and correct responses and enable all students to synthesize complex knowledge and skills.</li>
+<li>Teacher emphasizes key ideas and skills necessary to master lesson objectives and anticipates and addresses possible student misconceptions.</li>
+
+										</ul>
+										
+									</li>
+									
+									
+								</ul><!-- /crit at-->
+								
+								<h5>Students</h5>
+								
+								<ul class="row row-scoring preview"><!-- critical attributes columns -->
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns ">
+										<ul>
+											<li>Students rarely ask questions related to the subject matter.</li>
+<li>Students spend most work time on rote or basic tasks, such as copying or filling in blanks.</li>
+<li>Students are often prevented from engaging with new material due to lack of prerequisite knowledge and skills.</li>
+
+										</ul>
+									</li>
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns">
+										<ul>
+											<li>Students’ comments and questions rarely reveal higher-order thinking.</li>
+<li>Students may read, write, or discuss the material they are learning, but the variety of ways students engage with the content is limited or inconsistent.</li>
+<li>Students are sometimes unable to engage with new material due to lack of prerequisite knowledge and skills. </li>
+
+											
+										</ul>
+										
+									</li>
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns">
+										<ul>
+											<li>Students’ comments and questions reveal higher-order thinking.</li>
+<li>Students frequently read, write, and discuss about the material they are learning.</li>
+<li>Students use precise and accurate language.</li>
+<li>Students build on prerequisite knowledge and skills to develop new understanding.</li>
+
+										</ul>
+										
+									</li>
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns">
+										<ul>
+											<li>Students ask questions that reveal higher order thinking, and have opportunities to respond to each other’s questions.</li>
+<li>Students consistently engage with the subject matter in a variety of ways, including reading, writing, and discussing.</li>
+<li>Students consistently use precise and accurate language. </li>
+<li>Students build on prerequisite knowledge and skills to develop and make connections to new understandings. </li>
+<li>When prompted, students articulate the prerequisite skills and content necessary to accomplish assigned tasks.</li>
+
+										</ul>
+										
+									</li>
+									
+									
+								</ul><!-- /crit at-->
+								
+								
+								
+							</div>
+							
+						</div>
+						
+					</div><!-- / 1 child -->
+					
+					<div class="accord-panel panel-default bar-1 pull-right edit-bar"><!--2 child -->
+		  			      <div class="panel-heading borderless">
+		  			       
+								<div class="col-md-9">
+				  			          <a class="accordion-toggle fluid" data-toggle="collapse" data-parent="#accordion" href="#child2">
+								  	
+												 <span class="icon-caret-right primary arrow"></span>
+												 <h4 class="disp-inline"><span class="grey">I-A-4.</span>   Well-Structured Lessons</h4>
+									</a>
+								</div>	
+								<div class="col-md-3 align-right">
+									  	<span class="btn icon-star btn-spaced red"> </span>
+								</div>	
+								
+		  			      </div>
+						  
+						  
+		  			    <div id="child2" class="panel-collapse collapse">
+							
+							<div class="col-md-11 pull-right">
+	  			       			<p>
+								<ul>
+									<li>Objectives: Explicit statement of the challenging and measureable skills that students will master by the end of the lesson.</li> 
+<li>Pacing & Sequence: Appropriate time is allotted to particular lesson elements. Lesson structure is clear, logical, and builds upon previous material and provides a foundation for upcoming lessons. </li>
+<li>Activities: Students are asked to complete tasks that promote knowledge and skill development and require higher order thinking, through application, analysis, synthesis, or evaluation. </li>
+
+
+								</ul>
+								</p>
+							</div>
+							<div class="col-md-11 pull-right">
+								<!-- scoring widgets -->
+								<ul class="row row-scoring">
+									
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns">
+										<div class="">
+											<div>
+												<input class="input-invisible red" style="width:60%" value="Unsatisfactory"></input><a class="btn icon-trash"></a>
+											</div>
+											<div class="label-score">
+												<input class="input-invisible" style="width:100%" value="Level 1"></input>
+											</div>
+											<div class="label-score">
+												<input class="input-invisible" style="width:100%" value="0"></input>
+											</div>
+											<p class="mar-top-20 smaller">Demonstrates limited knowledge of the subject matter and/or its pedagogy; relies heavily on textbooks or resources for development of the factual content. Rarely engages students in learning experiences focused on complex knowledge or skills in the subject.</p>
+										</div>
+									</li>
+									
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns">
+										<div class="">
+											<div>
+												<input class="input-invisible red" style="width:60%" value="Basic"></input><a class="btn icon-trash"></a>
+											</div>
+											<div class="label-score">
+												<input class="input-invisible" style="width:100%" value="Level 2"></input>
+											</div>
+											<div class="label-score">
+												<input class="input-invisible" style="width:100%" value="1"></input>
+											</div>
+											<p class="mar-top-20 smaller">Demonstrates factual knowledge of subject matter and the pedagogy it requires by sometimes engaging students in learning experiences around complex knowledge and skills in the subject.
+											</p>
+										</div>
+									</li>
+									
+									
+									
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns">
+										<div class="">
+											<div>
+												<input class="input-invisible red" style="width:60%" value="Proficient"></input><a class="btn icon-trash"></a>
+											</div>
+											<div class="label-score">
+												<input class="input-invisible" style="width:100%" value="Level 3"></input>
+											</div>
+											<div class="label-score">
+												<input class="input-invisible" style="width:100%" value="2"></input>
+											</div>
+											<p class="mar-top-20 smaller">Demonstrates sound knowledge and understanding of the subject matter and the pedagogy it requires by consistently engaging students in learning experiences that enable them to acquire complex knowledge and skills in the subject.
+											</p>
+										</div>
+									</li>
+									
+									
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns">
+										<div class="">
+											<div>
+												<input class="input-invisible red" style="width:60%" value="Exemplary"></input><a class="btn icon-trash"></a>
+											</div>
+											<div class="label-score">
+												<input class="input-invisible" style="width:100%" value="Level 4"></input>
+											</div>
+											<div class="label-score">
+												<input class="input-invisible" style="width:100%" value="3"></input>
+											</div>
+											<p class="mar-top-20 smaller">Demonstrates expertise in subject matter and the pedagogy it requires by engaging all students in learning experiences that enable them to synthesize complex knowledge and skills in the subject. Is able to model this element.
+											</p>
+										</div>
+									</li>
+									
+									
+								</ul><!-- /scoring widget -->
+								<div class="fluid mar-top-20">
+									<h4>Critical Attributes</h4>
+									<h5>Teachers</h5>
+								</div>
+								<ul class="row row-scoring preview"><!-- critical attributes columns -->
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns ">
+										<ul>
+											<li>Teacher does not consider prerequisite relationships when planning.</li>
+											<li>Teacher conveys inaccurate content to students, or does not communicate the key ideas and skills necessary for mastery of unit and lesson objectives.</li>
+											<li>Teacher provides incomplete or perfunctory answers to student questions. </li>
+											<li>Teacher uses instructional strategies that are inconsistent with current subject area and grade-level best practices. </li>
+											<li>5Teacher rarely engages students in learning experiences focused on complex knowledge or skills, and instead relies on rote or basic activities. </li>
+
+										</ul>
+									</li>
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns">
+										<ul>
+											<li>Teacher demonstrates only a basic understanding of the discipline, or incomplete knowledge of prerequisite relationships.</li>
+<li>Teacher conveys accurate information to students but delivery is not consistently organized in a way that effectively facilitates learning or emphasizes key ideas and skills.</li>
+<li>Teacher answers students’ questions accurately, but does not provide feedback that furthers their learning.</li>
+<li>4Teacher uses instructional strategies that are rarely consistent with current subject area and grade-level best practices. </li>
+<li>Teacher sometimes engages students in learning experiences around complex knowledge and skills.</li>
+
+										</ul>
+										
+									</li>
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns">
+										<ul>
+											<li>Teacher identifies important concepts of the discipline and their relationships to one another.</li>
+<li>Teacher conveys accurate content to students, providing clear explanations that effectively guide student thinking without doing the work for the students.</li>
+<li>Teacher answers students’ questions accurately and provides feedback that extends their thinking.</li>
+<li>Teacher uses instructional strategies that are consistent with current subject area and grade-level best practices. </li>
+<li>Teacher creates learning experiences that allow for multiple perspectives and correct responses and enable students to acquire complex knowledge and skills.</li>
+<li>Teacher emphasizes key ideas and skills necessary to master lesson objectives.</li>
+
+										</ul>
+										
+									</li>
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns">
+										<ul>
+											<li>Teacher illustrates and consistently emphasizes content relationships within and between disciplines.</li>
+<li>Teacher conveys accurate content to students, providing clear explanations that extend student thinking. </li>
+<li>Teacher guides students to answer each other’s questions accurately and to provide each other with useful feedback. </li>
+<li>Teacher uses instructional strategies that are consistent with current subject area and grade-level best practices and integrates innovative materials to support student learning. </li>
+<li>Teacher creates learning experiences that allow for multiple perspectives and correct responses and enable all students to synthesize complex knowledge and skills.</li>
+<li>Teacher emphasizes key ideas and skills necessary to master lesson objectives and anticipates and addresses possible student misconceptions.</li>
+
+										</ul>
+										
+									</li>
+									
+									
+								</ul><!-- /crit at-->
+								
+								<h5>Students</h5>
+								
+								<ul class="row row-scoring preview"><!-- critical attributes columns -->
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns ">
+										<ul>
+											<li>Students rarely ask questions related to the subject matter.</li>
+<li>Students spend most work time on rote or basic tasks, such as copying or filling in blanks.</li>
+<li>Students are often prevented from engaging with new material due to lack of prerequisite knowledge and skills.</li>
+
+										</ul>
+									</li>
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns">
+										<ul>
+											<li>Students’ comments and questions rarely reveal higher-order thinking.</li>
+<li>Students may read, write, or discuss the material they are learning, but the variety of ways students engage with the content is limited or inconsistent.</li>
+<li>Students are sometimes unable to engage with new material due to lack of prerequisite knowledge and skills. </li>
+
+											
+										</ul>
+										
+									</li>
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns">
+										<ul>
+											<li>Students’ comments and questions reveal higher-order thinking.</li>
+<li>Students frequently read, write, and discuss about the material they are learning.</li>
+<li>Students use precise and accurate language.</li>
+<li>Students build on prerequisite knowledge and skills to develop new understanding.</li>
+
+										</ul>
+										
+									</li>
+									<!-- widget1 -->
+									<li class="col-md-3 gut-10 edit-columns">
+										<ul>
+											<li>Students ask questions that reveal higher order thinking, and have opportunities to respond to each other’s questions.</li>
+<li>Students consistently engage with the subject matter in a variety of ways, including reading, writing, and discussing.</li>
+<li>Students consistently use precise and accurate language. </li>
+<li>Students build on prerequisite knowledge and skills to develop and make connections to new understandings. </li>
+<li>When prompted, students articulate the prerequisite skills and content necessary to accomplish assigned tasks.</li>
+
+										</ul>
+										
+									</li>
+									
+									
+								</ul><!-- /crit at-->
+								
+								
+								
+							</div>
+							
+						</div>
+						
+					</div><!-- / 2 child -->
+					
+				</div>
+	   
+	    	</div> <!-- content -->
+    </div> <!-- admin-wrap -->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+	 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+	  <script>
+	  //Make things sortable - jquiry UI
+			  $(function() {
+			    $( "#sortable-mater" ).sortable();
+			    $( "#sortable-master" ).disableSelection();
+			    $( "#sortable-outline" ).sortable();
+			    $( "#sortable-outline" ).disableSelection();
+			  });
+	  </script>
+	  
+	  <script>
+			  $(function() {
+				 
+				 
+			 });
+			  
+			 
+	  
+	  </script>
+	 
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

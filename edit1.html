@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bootstrap &middot; Teachscape Bootstrap Theme</title>
+    
+	
+	 <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet">
+  
+	
+	
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Documentation extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet">
+	
+    
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+      <script src="../assets/js/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+
+
+   
+    
+    <!-- END: Place anything custom before this. -->
+    
+  </head>
+
+  <body>
+
+      <!-- Static navbar -->
+      <div class="ts-navbar"><img src="images/mainNav.png" width="1565px" height="38px"></div>
+	  <div class="content-fluid">
+		  <ol class="breadcrumb">
+		    <li><a href="#">Manage Rubrics</a></li>
+		    <li>Create Rubric: Edit Content</li>
+		  </ol>
+	  </div>
+    
+      <div class="admin-wrap">
+		 
+		
+
+    <!-- Main content area -->	
+       
+        <div class="content-fluid bread-none">
+            <div class="row top-row">
+                <div class="col-md-8"><h4>Edit Rubric Content</h4><h1><input class="input-invisible" value="Boston Observable Rubric" style="width:100%"></input></h1></div>
+                <div class="col-md-4 action-wrap"></div>
+            </div>
+      <!-- call to action bar -->
+            <div class="row">
+                <div class="col-md-12 col-lg-12 call-bar-top">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 call-bar-center">
+							<div class="btn-group">
+							  <a type="button" class="btn btn-default " href="outline1.html">Outline</button>
+							  <a type="button" class="btn btn-default active" href="edit1.html">Edit</a>
+							  <a type="button" class="btn btn-default" href="preview1.html">Preview</a>
+							</div>
+						</div>
+						<div class="col-md-3 call-bar-right">
+							<a href="#" class="btn btn-default btn-sm">Save</a>
+							<a href="index.html" class="btn btn-primary btn-md">Done</a>
+						</div>
+					</div>
+				  
+                </div>
+            </div><!-- row !-->
+       
+	   	 	<div class="row content-area">
+				<div class="col-md-10 col-md-offset-1"> <!-- main content area centered -->
+					
+					<h4>Rubric Description</h4>
+					<textarea rows="10" cols="100" placeholder="Rubric Description" class="fluid"></textarea>
+					
+					
+		  			<div class="accord-panel panel-default bar-1 edit-bar"><!-- first parent -->
+		  			      <div class="panel-heading borderless">
+		  			        <h4 class="panel-title">
+		  			          <a class="accordion-toggle btn" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+		  			            
+								 <span class="icon-caret-down primary arrow"></span>
+								 <input class="input-invisible" value="1" style="width:5%"></input>
+								 <input class="input-invisible" style="width:80%" value="Section"></input>
+								</a>
+							 </h4>
+		  			      </div>
+						  
+						  
+		  			    <div id="struct-master" class="panel-collapse collapse in">
+							<div class="row">
+								<div class="col-md-10 pull-right">
+		  			       		 <textarea rows="5" cols="50" placeholder="Section Description" class="fluid"></textarea>
+								</div>
+							</div>
+						</div>
+					</div><!-- / first parent -->
+
+	   
+	    	</div> <!-- content -->
+    </div> <!-- admin-wrap -->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+	 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+	  <script>
+	  //Make things sortable - jquiry UI
+			  $(function() {
+			    $( "#sortable-mater" ).sortable();
+			    $( "#sortable-master" ).disableSelection();
+			    $( "#sortable-outline" ).sortable();
+			    $( "#sortable-outline" ).disableSelection();
+			  });
+	  </script>
+	  
+	  <script>
+			  $(function() {
+				 
+				 
+			 });
+			  
+			 
+	  
+	  </script>
+	 
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
