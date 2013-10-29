@@ -1,0 +1,58 @@
+/* LESS Document */
+/* typography  */
+h1{
+	color: @gray-darker;
+}
+
+h2, h3{
+	color: @ts-deep;
+}
+h4, h5{
+	color: @brand-primary;
+}
+/*  For Icon Fonts  */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+// Product Specific
+// -------------------------
+.reflect		{ color: @reflect; }
+.focus			{ color: @focus; }
+.learn			{ color: @learn; }
+.advance		{ color: @advance; }
+
+// Left nav bar custom changes
+// -------------------------
+
+.bs-sidenav {
+	line-height:1em;
+	font-size:14px;
+}
+
+// Modal custom changes
+// -------------------------
+
+// Modal background
+.modal-backdrop {
+  // Fade for backdrop
+  &.fade { .opacity(0); }
+  &.in { .opacity(.7); }
+}
+
+// Breadcrumb
+// -------------------------
+.breadcrumb > li + li:before {
+padding: 0 5px;
+color: #cccccc;
+font-family: 'TS';
+content: "\f0da"; // character code for   icon-caret-right 
+
+}

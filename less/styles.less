@@ -1,0 +1,453 @@
+/* Styles.less */
+
+@admin-grey: #f4f4f4;
+@dotted-border: 1px dotted #444;
+@dashed-border: 1px dashed #444;
+@space-none: 0px 0px;
+@space-lg: 70px;
+@space-sm: 20px;
+@space-md: 50px;
+// Grays
+// -------------------------
+
+@gray-darker:            lighten(#000, 13.5%); // #222
+@gray-dark:              lighten(#000, 20%);   // #333
+@gray:                   lighten(#000, 33.5%); // #555
+@gray-light:             lighten(#000, 60%);   // #999
+@gray-lighter:           lighten(#000, 93.5%); // #eee
+
+ // Brand colors
+ // -------------------------
+ 
+@brand-primary:         #732843; /*  Teachscape Burgundy */
+@ts-deep:			      #3B2030; 
+@brand-success:         #5cb85c;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+@brand-info:            #5bc0de;
+ 
+// Product colors
+// -------------------------
+@focus:						#175473;
+@reflect: 					#006b33;
+@learn: 					#6c2a92;
+@advance: 					#bd4800;
+
+// Scaffolding
+// -------------------------
+
+@body-bg:               #fff;
+@text-color:            @gray-dark;
+
+// Links
+// -------------------------
+
+@link-color:            #2F4FA2;
+@link-hover-color:      darken(@link-color, 15%);
+
+@gray-gradient: top, rgb(255,255,255) 11%, rgb(198,213,230) 100%;
+
+
+/*  ============  major page layout items  ============  */
+body { padding-top: 0; }
+
+.disabled {
+	color: @gray-light;
+}
+
+.fluid {
+	width:100%;
+}
+
+.bar-actions > .divider {
+	border-right:1px solid #737373;
+	margin:0 10px;
+	height:10px;
+	display:inline;
+}
+
+.disp-inline {
+	display:inline-block;
+}
+
+.primary {
+	color: @link-color;
+}
+
+.grey {
+	color:@gray;
+}
+
+.red {
+	color:@brand-primary;
+}
+
+.mar-top-20 {
+	margin-top:20px;
+}
+
+small {
+	font-size:12px;
+}
+
+.smaller {
+	font-size:@font-size-small;
+}
+
+.align-right {
+	text-align:right;
+}
+/*  ============   navigation items  ============   */
+.ts-subnav {
+    border-top: @dotted-border;
+    border-bottom: @dotted-border;
+    padding: @space-none;
+    background:#fff;
+}
+
+.ts-navbar {
+    width:100%;
+    padding-bottom: @space-lg;
+    background:#fff;
+}
+
+.nav-main {
+	margin-bottom:10px;
+}
+
+.admin-subnav {
+	background: #fff;
+	ul {
+		
+		li.active {
+			border-top:none;
+		}
+	}
+}
+
+
+.nav {
+	li.active {
+	    border-top:4px solid @focus;
+	    padding-top: 6px;
+	    color: #444;
+	}
+	li {
+	    display:inline-block;
+	    list-style:none;
+	    padding: 0px 20px;
+	    color: @link-color;
+		a {
+    		color: @link-color;
+			background:none;
+		}
+		a:hover {
+    		color: #fff;
+			background:@link-color;
+		}
+	}
+}
+
+.top-row {
+	margin-top:@space-lg;
+	margin-bottom:@space-md;
+	div {
+		h1 {
+			margin-top: 0px;
+			margin-bottom: 0px
+		}
+	}
+}
+
+
+.btn-spaced {
+	padding: 6px 12px;
+	display:inline-block;
+}
+
+.btn-icon-active {
+	padding: 6px 12px;
+	display:inline-block;
+	color: @link-color;
+}
+
+.btn-icon-active:hover {
+	color: darken(@link-color, 15%)
+}
+/*  ============   content areas and panels  ============   */
+.panel {
+	padding: @space-md;
+	box-shadow: 0px 2px 5px @gray-light;
+}
+
+
+.content-area {
+	margin:30px 0;
+	
+}
+
+.squared {
+	border-radius: 0px;
+}
+
+.title-panel {
+	margin:0px 0px 30px 0px;
+
+}
+
+.preview {
+	ul, li, p {
+		font-size:12px
+	}
+}
+
+/*  ============   tables ============   */
+
+.tall-table {
+	tbody {
+		tr {
+			td {
+				padding-top:10px;
+				padding-bottom:10px;
+			}
+		}
+	}
+}
+.wide-table {
+	width:100%
+}
+
+
+/*  ============   icon helpers  ============   */
+
+.info-title {
+	h4 {
+		text-align:center;
+	}
+}
+
+
+
+/*  ============   forms   ============  */
+
+.label-dark {
+	background: @gray-dark;
+}
+
+.input-invisible {
+	border:1px solid rgba(255,255,255, 0);
+	background: none;
+	margin-right: 20px;
+}
+
+.invisible {
+	border:1px solid rgba(255,255,255, 0);
+}
+
+.input-invisible:hover{
+	border:1px solid #ccc;
+	background: #fff;
+}
+
+
+/* ============    accordion  ============   */
+
+.accord-panel {
+	
+}
+
+.panel-heading.borderless {
+	border:0px;
+}
+
+
+/* ============   call to action row */
+
+
+.action-wrap {
+	text-align: right;
+	padding: 30px, 0px, 20px, 30px;
+}
+
+.call-bar-top {
+	border-top:1px dotted #444; 
+	padding:20px 0 30px 0; 
+	background:  url(../../images/shadow-down.png) repeat-x bottom left;
+}
+
+.call-bar-center {
+	text-align:center;
+}
+
+.call-bar-right {
+	text-align:right;
+}
+
+
+/* ============  jquery ui overrides   ============  */
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	border: 1px solid #d3d3d3;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	height: 40px;
+	background: @gray;
+	color: #555555;
+}
+
+.sortable-list { list-style-type: none; margin: 0 0 10px 0; padding: 0;}
+.sortable-list li { padding: 8px; padding-left: 1.5em;  }
+.sortable-list li span { position: absolute; margin-left: -1.3em; }
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+	color: @link-color;
+	text-decoration: none;
+}
+
+/* ============  bar states   ============  */
+
+.bar-section {
+	background-image: linear-gradient(@gray-gradient);
+	background-image: -o-linear-gradient(@gray-gradient);
+	background-image: -moz-linear-gradient(@gray-gradient);
+	background-image: -webkit-linear-gradient(@gray-gradient);
+	background-image: -ms-linear-gradient(@gray-gradient);
+	margin-bottom:10px;
+	float:right;
+	display:block;
+}
+
+.bar-section-scoring {
+	background-image: linear-gradient(@gray-gradient);
+	background-image: -o-linear-gradient(@gray-gradient);
+	background-image: -moz-linear-gradient(@gray-gradient);
+	background-image: -webkit-linear-gradient(@gray-gradient);
+	background-image: -ms-linear-gradient(@gray-gradient);
+	margin-bottom:10px;
+	float:right;
+	display:block;
+	height:auto;
+}
+
+.bar-scoring-levels {
+	border:1px solid @gray-light;
+	padding:5px;
+	background-image: linear-gradient(@gray-gradient);
+	background-image: -o-linear-gradient(@gray-gradient);
+	background-image: -moz-linear-gradient(@gray-gradient);
+	background-image: -webkit-linear-gradient(@gray-gradient);
+	background-image: -ms-lineargradient(@gray-gradient);
+	float:left;
+	display:block;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#suggested-ui {
+
+	list-style-type:none;
+}
+
+
+.bar-suggested, .bar-suggested-scoring {
+	background: none;
+	border:@dashed-border;
+	text-align:right;
+	list-style:none;
+	padding:5px;
+	height:auto;
+	max-width:inherit;
+	margin-bottom:10px;
+	display:block;
+	float:right;
+}
+
+.bar-suggested-scoring {
+	float:left;
+	display:inline-block;
+}
+
+.bar-1 {
+	width:100%;
+	max-width:100%;
+	margin-top:20px;
+	
+}
+.bar-2 {
+	width:90%;
+	max-width: 90%;
+}
+
+.bar-3 {
+	width:80%;
+	max-width: 80%;
+}
+
+.bar-4 {
+	width:70%;
+	max-width: 70%;
+}
+
+.bar-5{
+	width:60%;
+	max-width: 60%;
+}
+
+.bar-actions {
+	float:right;
+	margin-top:-3px;
+}
+
+.label-score {
+	display:inline-block;
+	width:40%;
+	margin-right:5px;
+}
+
+.row-scoring, .row-scoring-outline {
+	margin:20px 0;
+	list-style-type: none; 
+	-webkit-padding-start: 0px;
+}
+
+.row-scoring-outline {
+	margin:15px 0 0 0;
+}
+
+/* ============= edit classes =================*/
+
+.edit-bar {
+	padding-bottom:15px;
+	border-bottom: @dotted-border;
+}
+
+ul > li.edit-columns {
+		border-right: @dotted-border;
+}
+ul > li.edit-columns:first-child   {
+	border-left: @dotted-border;
+	border-right: @dotted-border;
+}
+/* ============  bootstrap overrides   ============  */
+
+.panel-default > .panel-heading {
+	background-color: rgba(255,255,255, 0);
+}	
+	
+a.accordion-toggle:hover {
+	text-decoration:none;
+	color:@link-hover-color;
+}
+
+.gut-10 {
+	padding:0 5px;
+}
+
+.breadcrumb {
+	background:none;
+	padding:0px;
+}
+
+

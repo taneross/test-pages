@@ -20,7 +20,7 @@
     <!-- Documentation extras -->
     <link href="assets/css/pygments-manni.css" rel="stylesheet">
 	
-    
+   
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -46,7 +46,7 @@
 	 
 	 <script>
 	 $(function(){
-	    initOutline();
+	     $( "#target" ).focus();
 	 });
 					 </script>
     <!-- END: Place anything custom before this. -->
@@ -72,7 +72,7 @@
        
         <div class="content-fluid bread-none">
             <div class="row top-row">
-                <div class="col-md-8"><h4>Outline Rubric</h4><h1><input class="input-invisible" placeholder="Enter Rubric Title"></input></h1></div>
+                <div class="col-md-8"><h4>Outline Rubric</h4><h1><input id="target" class="input-invisible" placeholder="Enter Rubric Title"></input></h1></div>
                 <div class="col-md-4 action-wrap"></div>
             </div>
       <!-- call to action bar -->
@@ -115,7 +115,7 @@
 									  <div class="col-md-7">
 									 	 <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
 									 	 <input class="input-invisible" placeholder="1" style="width:10%"></input>
-									 	 <input class="input-invisible" style="width:40%" value=" Section"></input>
+									 	 <input class="input-invisible" style="width:40%" placeholder="Enter Section Name"></input>
 									 </div>
 									 <div class="col-md-5">
 									  	<div class="bar-actions">
@@ -153,14 +153,14 @@
 						  <li  id="rung1" class="ui-state-default bar-section bar-1">
 							  <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
 							  <input class="input-invisible" placeholder="1" style="width:50px"></input>
-							  <input class="input-invisible" style="width:500px" placeholder="Section"></input>
+							  <input class="input-invisible" style="width:500px" placeholder="Enter Section Title"></input>
 							  <div class="bar-actions">
 								  <div class="disp-inline"></div>
 								  <div class="divider"></div>
 								  <a class="btn icon-pencil" href="edit1.html"></a>  <a class="btn icon-trash"></a>
 							  </div>
 						  </li>
-						<li id="" class="ui-state-default bar-suggested bar-1"><a id="" class="bar-sug btn btn-default btn-xs">Add Section</a></li>
+						<li id="" class="ui-state-default bar-suggested bar-1"><a id="" href="outline1b.html" class="bar-sug btn btn-default btn-xs">Add Section</a></li>
 						</ul>
 						
 					</div>
